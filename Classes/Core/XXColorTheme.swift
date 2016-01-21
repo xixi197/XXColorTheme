@@ -8,55 +8,69 @@
 
 import UIKit
 import RxSwift
+import UIColor_Hex_Swift
 
-enum XXColorViewType: String {
-    case DefaultXXTintColorButton
-
-    var dictionary: [String: UIColor] {
-        let colorTheme = XXColorTheme.currentTheme
-        switch self {
-        case DefaultXXTintColorButton:
-            return [
-                "setXx_normalTintColor:": colorTheme.value.color(.Main),
-                "setXx_highlightedTintColor:": colorTheme.value.color(.Tint)]
-        }
+public extension UIColor {
+    class func randomColor() -> UIColor {
+        return UIColor(hex6: UInt32(random() % 16777211))
     }
 }
 
 enum XXColorType {
-    case Main
+    case Content
+    case ContentBackground
     case Tint
+    case Mark
+    case Background
 }
 
 public enum XXColorTheme {
-    case Light
     case Dark
+    case Light
     case Custom
 
     static let currentTheme = Variable(XXColorTheme.Dark)
 
     func color(type: XXColorType) -> UIColor {
         switch self {
-        case .Light:
-            switch type {
-            case .Main:
-                return UIColor.blackColor()
-            case .Tint:
-                return UIColor.blueColor()
-            }
         case .Dark:
             switch type {
-            case .Main:
+            case .Content:
+                return UIColor.whiteColor()
+            case .ContentBackground:
+                return UIColor.blackColor()
+            case .Tint:
+                return UIColor(hex6: 0x00B9F2)
+            case .Mark:
+                return UIColor(hex6: 0xF44336)
+            case .Background:
+                return UIColor(hex6: 0x212121)
+            }
+        case .Light:
+            switch type {
+            case .Content:
+                return UIColor.blackColor()
+            case .ContentBackground:
                 return UIColor.whiteColor()
             case .Tint:
-                return UIColor.blueColor()
+                return UIColor(hex6: 0x00B9F2)
+            case .Mark:
+                return UIColor(hex6: 0xF44336)
+            case .Background:
+                return UIColor(hex6: 0xDEDEDE)
             }
         case .Custom:
             switch type {
-            case .Main:
-                return UIColor.greenColor()
+            case .Content:
+                return UIColor(hex6: 0xF44336)
+            case .ContentBackground:
+                return UIColor.blackColor()
             case .Tint:
-                return UIColor.redColor()
+                return UIColor.whiteColor()
+            case .Mark:
+                return UIColor(hex6: 0xF44336)
+            case .Background:
+                return UIColor(hex6: 0xDEDEDE)
             }
         }
     }

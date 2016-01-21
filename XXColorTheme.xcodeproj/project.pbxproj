@@ -16,6 +16,7 @@
 		C46CBFCB1C50C6B500E9B575 /* UIView+XXColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46CBFCA1C50C6B500E9B575 /* UIView+XXColorTheme.swift */; };
 		C46CBFD01C50D9D200E9B575 /* ImageColoredUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46CBFCD1C50D9D200E9B575 /* ImageColoredUtils.swift */; };
 		C46CBFD11C50D9D200E9B575 /* XXTintColorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46CBFCF1C50D9D200E9B575 /* XXTintColorButton.swift */; };
+		C46CBFD31C50EBB100E9B575 /* XXColorViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46CBFD21C50EBB100E9B575 /* XXColorViewType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		C46CBFCA1C50C6B500E9B575 /* UIView+XXColorTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+XXColorTheme.swift"; sourceTree = "<group>"; };
 		C46CBFCD1C50D9D200E9B575 /* ImageColoredUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageColoredUtils.swift; sourceTree = "<group>"; };
 		C46CBFCF1C50D9D200E9B575 /* XXTintColorButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XXTintColorButton.swift; sourceTree = "<group>"; };
+		C46CBFD21C50EBB100E9B575 /* XXColorViewType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XXColorViewType.swift; sourceTree = "<group>"; };
 		EFFEC2889B7E52BE5AF2564C /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -108,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				C416251A1C48CF96007C1C82 /* XXColorTheme.swift */,
+				C46CBFD21C50EBB100E9B575 /* XXColorViewType.swift */,
 				C46CBFCA1C50C6B500E9B575 /* UIView+XXColorTheme.swift */,
 			);
 			name = Core;
@@ -255,6 +258,7 @@
 			files = (
 				C46CBFCB1C50C6B500E9B575 /* UIView+XXColorTheme.swift in Sources */,
 				C416251B1C48CF96007C1C82 /* XXColorTheme.swift in Sources */,
+				C46CBFD31C50EBB100E9B575 /* XXColorViewType.swift in Sources */,
 				C46CBFD11C50D9D200E9B575 /* XXTintColorButton.swift in Sources */,
 				C46CBFD01C50D9D200E9B575 /* ImageColoredUtils.swift in Sources */,
 				C41625091C48CF27007C1C82 /* ViewController.swift in Sources */,

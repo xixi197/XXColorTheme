@@ -24,10 +24,10 @@ class ViewController: UIViewController {
         button2.xx_normalTemplateImage = UIImage(named: "download")
         button2.xx_highlightedTemplateImage = UIImage(named: "downloaded")
         button2.xx_imageBorderWidth = 1
-        button2.xx_colorViewType = .DefaultXXTintColorButton
+        button2.xx_colorViewType = .LightXXTintColorButton
     }
 
-    @IBAction func change (view: UIView) {
+    @IBAction func change() {
         if (XXColorTheme.currentTheme.value == XXColorTheme.Light) {
             XXColorTheme.currentTheme.value = XXColorTheme.Dark
         } else if (XXColorTheme.currentTheme.value == XXColorTheme.Dark) {
