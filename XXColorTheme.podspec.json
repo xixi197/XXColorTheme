@@ -1,0 +1,29 @@
+{
+  "name": "XXColorTheme",
+  "version": "0.9",
+  "summary": "XXColorTheme",
+  "license": "MIT",
+  "authors": {
+    "GitHub": "xixi197@gmail.com"
+  },
+  "source_files": [
+    "Classes",
+    "Classes/Core",
+    "Classes/Utils",
+    "Classes/XXView"
+  ],
+  "requires_arc": true,
+  "platforms": {
+    "ios": "8.0"
+  },
+  "dependencies": {
+    "RxSwift": [
+    ],
+    "RxCocoa": [
+    ],
+    "NSObject+Rx": [
+    ],
+    "UIColor_Hex_Swift": [
+    ]
+  }
+}
