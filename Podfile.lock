@@ -1,0 +1,21 @@
+PODS:
+  - NSObject+Rx (1.2.0):
+    - RxSwift (~> 2.0.0)
+  - RxCocoa (2.1.0):
+    - RxSwift (~> 2.0)
+  - RxSwift (2.0.0)
+  - UIColor_Hex_Swift (1.8)
+
+DEPENDENCIES:
+  - NSObject+Rx
+  - RxCocoa
+  - RxSwift
+  - UIColor_Hex_Swift
+
+SPEC CHECKSUMS:
+  NSObject+Rx: 552d0a5bb78087b0faf9f8a066148577f1231426
+  RxCocoa: 79b5feb8378545336e756a0a33fcf5e95050b71c
+  RxSwift: d83246efa6f16c50c143bec134649d045498f601
+  UIColor_Hex_Swift: a66b9d5f6e8fddbd9fe32996504f0b7e9d20d680
+
+COCOAPODS: 0.39.0
