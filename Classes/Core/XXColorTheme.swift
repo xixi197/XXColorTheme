@@ -28,7 +28,7 @@ enum XXColorType {
     case Tint
 }
 
-enum XXColorTheme {
+public enum XXColorTheme {
     case Light
     case Dark
     case Custom

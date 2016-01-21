@@ -8,7 +8,7 @@
 
 import UIKit
 
-class XXTintColorButton: UIButton {
+public class XXTintColorButton: UIButton {
 
     private var _normalTintColor: UIColor?
     private var _highlightedTintColor: UIColor?
@@ -27,17 +27,17 @@ class XXTintColorButton: UIButton {
         super.init(frame: frame)
     }
 
-    required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
 
-    override func imageRectForContentRect(contentRect: CGRect) -> CGRect {
+    public override func imageRectForContentRect(contentRect: CGRect) -> CGRect {
         return xx_isTextDown ?
             CGRectMake((contentRect.size.width - xx_imageWidth) / 2, 0, xx_imageWidth, xx_imageWidth) :
             super.imageRectForContentRect(contentRect)
     }
 
-    override func titleRectForContentRect(contentRect: CGRect) -> CGRect {
+    public override func titleRectForContentRect(contentRect: CGRect) -> CGRect {
         return xx_isTextDown ?
             CGRectMake(0, xx_imageWidth + xx_textTopMargin, contentRect.size.width, contentRect.size.height - xx_imageWidth - xx_textTopMargin) :
             super.titleRectForContentRect(contentRect)

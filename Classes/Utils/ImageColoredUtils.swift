@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UIImage {
+public extension UIImage {
     /// -> self + color
     func tintedImage(color: UIColor?) -> UIImage {
         guard let color = color else { return self }
@@ -62,7 +62,7 @@ extension UIImage {
     }
 }
 
-extension UIColor {
+public extension UIColor {
     /// -> 1px image
     var image: UIImage {
         let rect = CGRectMake(0, 0, 1, 1)
