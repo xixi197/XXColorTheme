@@ -18,6 +18,7 @@
 		C46CBFD11C50D9D200E9B575 /* XXTintColorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46CBFCF1C50D9D200E9B575 /* XXTintColorButton.swift */; };
 		C46CBFD31C50EBB100E9B575 /* XXColorViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46CBFD21C50EBB100E9B575 /* XXColorViewType.swift */; };
 		C46CBFD91C51F29000E9B575 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C46CBFD81C51F29000E9B575 /* Default-568h@2x.png */; };
+		C46CBFDB1C52317600E9B575 /* XXRoundCornerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46CBFDA1C52317600E9B575 /* XXRoundCornerButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		C46CBFCF1C50D9D200E9B575 /* XXTintColorButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XXTintColorButton.swift; sourceTree = "<group>"; };
 		C46CBFD21C50EBB100E9B575 /* XXColorViewType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XXColorViewType.swift; sourceTree = "<group>"; };
 		C46CBFD81C51F29000E9B575 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		C46CBFDA1C52317600E9B575 /* XXRoundCornerButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XXRoundCornerButton.swift; sourceTree = "<group>"; };
 		EFFEC2889B7E52BE5AF2564C /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -133,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				C46CBFCF1C50D9D200E9B575 /* XXTintColorButton.swift */,
+				C46CBFDA1C52317600E9B575 /* XXRoundCornerButton.swift */,
 			);
 			name = XXView;
 			path = Classes/XXView;
@@ -261,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C46CBFCB1C50C6B500E9B575 /* UIView+XXColorTheme.swift in Sources */,
+				C46CBFDB1C52317600E9B575 /* XXRoundCornerButton.swift in Sources */,
 				C416251B1C48CF96007C1C82 /* XXColorTheme.swift in Sources */,
 				C46CBFD31C50EBB100E9B575 /* XXColorViewType.swift in Sources */,
 				C46CBFD11C50D9D200E9B575 /* XXTintColorButton.swift in Sources */,
