@@ -11,7 +11,7 @@ import UIKit
 public enum XXColorViewType: String {
     case DefaultXXTintColorButton
     case LightXXTintColorButton
-    case Light2XXTintColorButton
+    case LightXXTintColorButton2
 
     var dictionary: [String: UIColor] {
         let colorTheme = XXColorTheme.currentTheme
@@ -24,7 +24,7 @@ public enum XXColorViewType: String {
             return [
                 "setXx_normalTintColor:": colorTheme.value.color(.Content).colorWithAlphaComponent(0.48),
                 "setXx_highlightedTintColor:": colorTheme.value.color(.Content)]
-        case Light2XXTintColorButton:
+        case LightXXTintColorButton2:
             return [
                 "setXx_normalTintColor:": colorTheme.value.color(.Content).colorWithAlphaComponent(0.32),
                 "setXx_highlightedTintColor:": colorTheme.value.color(.Content)]

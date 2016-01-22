@@ -22,6 +22,7 @@ enum XXColorType {
     case Tint
     case Mark
     case Background
+    case Random
 }
 
 public enum XXColorTheme {
@@ -45,6 +46,8 @@ public enum XXColorTheme {
                 return UIColor(hex6: 0xF44336)
             case .Background:
                 return UIColor(hex6: 0x212121)
+            case .Random:
+                return UIColor.randomColor()
             }
         case .Light:
             switch type {
@@ -58,6 +61,8 @@ public enum XXColorTheme {
                 return UIColor(hex6: 0xF44336)
             case .Background:
                 return UIColor(hex6: 0xDEDEDE)
+            case .Random:
+                return UIColor.randomColor()
             }
         case .Custom:
             switch type {
@@ -71,6 +76,8 @@ public enum XXColorTheme {
                 return UIColor(hex6: 0xF44336)
             case .Background:
                 return UIColor(hex6: 0xDEDEDE)
+            case .Random:
+                return UIColor.randomColor()
             }
         }
     }

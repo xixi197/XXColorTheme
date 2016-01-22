@@ -11,20 +11,16 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var label: UILabel!
-    @IBOutlet weak var button: XXTintColorButton!
-    @IBOutlet weak var button2: XXTintColorButton!
+    @IBOutlet weak var defaultButton: XXTintColorButton!
+    @IBOutlet weak var LightButton: XXTintColorButton!
+    @IBOutlet weak var LightButton2: XXTintColorButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        button.xx_normalTemplateImage = UIImage(named: "like")
-//        button.xx_highlightedTemplateImage = UIImage(named: "liked")
-        button.xx_colorViewType = .DefaultXXTintColorButton
-
-//        button2.xx_normalTemplateImage = UIImage(named: "download")
-//        button2.xx_highlightedTemplateImage = UIImage(named: "downloaded")
-//        button2.xx_imageBorderWidth = 1
-        button2.xx_colorViewType = .LightXXTintColorButton
+        defaultButton.xx_colorViewType = .DefaultXXTintColorButton
+        LightButton.xx_colorViewType = .LightXXTintColorButton
+        LightButton2.xx_colorViewType = .LightXXTintColorButton2
     }
 
     @IBAction func change() {

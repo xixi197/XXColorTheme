@@ -38,7 +38,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zob-Do-oUo" customClass="XXTintColorButton" customModule="XXColorTheme" customModuleProvider="target">
-                                <rect key="frame" x="121" y="99" width="60" height="60"/>
+                                <rect key="frame" x="118" y="99" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="9MN-mM-UXU"/>
                                     <constraint firstAttribute="height" constant="60" id="fzn-P9-OsQ"/>
@@ -54,15 +54,31 @@
                                     <action selector="change" destination="BYZ-38-t0r" eventType="touchUpInside" id="oEz-Qm-Han"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NxM-q6-m4x" customClass="XXTintColorButton" customModule="XXColorTheme" customModuleProvider="target">
+                                <rect key="frame" x="208" y="99" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="lMA-af-Ehg"/>
+                                    <constraint firstAttribute="width" constant="60" id="ygs-hA-7aX"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="xx_normalTemplateImage" value="download"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="xx_highlightedTemplateImage" value="downloaded"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="change" destination="BYZ-38-t0r" eventType="touchUpInside" id="nRJ-GL-t9N"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Zob-Do-oUo" firstAttribute="leading" secondItem="Laz-pU-XFJ" secondAttribute="trailing" constant="33" id="0u9-vw-6X1"/>
+                            <constraint firstItem="Zob-Do-oUo" firstAttribute="leading" secondItem="Laz-pU-XFJ" secondAttribute="trailing" constant="30" id="0u9-vw-6X1"/>
+                            <constraint firstItem="NxM-q6-m4x" firstAttribute="top" secondItem="Laz-pU-XFJ" secondAttribute="top" id="1Pq-Ha-cex"/>
                             <constraint firstItem="Laz-pU-XFJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="28" id="6Hd-6P-9hP"/>
                             <constraint firstItem="zjr-MM-gXR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="HlQ-9l-Gy0"/>
                             <constraint firstItem="Laz-pU-XFJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="79" id="Lon-4v-vlS"/>
                             <constraint firstItem="zjr-MM-gXR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="O75-wQ-z5I"/>
                             <constraint firstItem="Zob-Do-oUo" firstAttribute="top" secondItem="Laz-pU-XFJ" secondAttribute="top" id="PGY-jk-W4D"/>
+                            <constraint firstItem="NxM-q6-m4x" firstAttribute="leading" secondItem="Zob-Do-oUo" secondAttribute="trailing" constant="30" id="csB-Lm-8LR"/>
                             <constraint firstItem="zjr-MM-gXR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="16" id="h3x-RA-M92"/>
                             <constraint firstItem="Laz-pU-XFJ" firstAttribute="top" secondItem="zjr-MM-gXR" secondAttribute="bottom" constant="43" id="pzB-NU-lDf"/>
                         </constraints>
@@ -74,8 +90,9 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="button" destination="Laz-pU-XFJ" id="NkY-Lz-13a"/>
-                        <outlet property="button2" destination="Zob-Do-oUo" id="HF9-ez-gNn"/>
+                        <outlet property="LightButton" destination="Zob-Do-oUo" id="Fu1-KK-yat"/>
+                        <outlet property="LightButton2" destination="NxM-q6-m4x" id="GFU-He-GL9"/>
+                        <outlet property="defaultButton" destination="Laz-pU-XFJ" id="ghR-VB-rtG"/>
                         <outlet property="label" destination="zjr-MM-gXR" id="Xfo-QY-080"/>
                     </connections>
                 </viewController>

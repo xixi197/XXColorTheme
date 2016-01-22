@@ -10,7 +10,7 @@ import UIKit
 
 @IBDesignable public class XXTintColorButton: UIButton {
 
-    // tintColor
+    // tintColor ColorTheme
     private var _normalTintColor: UIColor?
     private var _highlightedTintColor: UIColor?
 
@@ -18,6 +18,7 @@ import UIKit
     private var _normalTemplateImage: UIImage?
     private var _highlightedTemplateImage: UIImage?
 
+    // all image
     private var _imageBorderWidth: CGFloat = 0
     private var _imageBorderRadius: CGFloat = 30
     private var _imageBorderAlpha: CGFloat = 0.16
