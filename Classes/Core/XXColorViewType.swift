@@ -19,6 +19,14 @@ public enum XXColorViewType: String {
     case TintXXTintColorButton
     case MarkXXTintColorButton
 
+    case DefaultSwitch
+
+    case DefaultProgressView
+    case PlayerProgressView
+
+    case DefaultSlider
+    case PlayerSlider
+
     var dictionary: [String: UIColor] {
         let colorTheme = XXColorTheme.currentTheme
         switch self {
@@ -50,6 +58,28 @@ public enum XXColorViewType: String {
             return [
                 "setXx_normalTintColor:": colorTheme.value.color(.Content),
                 "setXx_selectedTintColor:": colorTheme.value.color(.Mark)]
+        case DefaultSwitch:
+            return [
+                "setTintColor:": colorTheme.value.color(.Content).colorWithAlphaComponent(0.08),
+                "setOnTintColor:": colorTheme.value.color(.Tint)]
+        case DefaultProgressView:
+            return [
+                "setProgressTintColor:": colorTheme.value.color(.Tint),
+                "setTrackTintColor:": colorTheme.value.color(.Content).colorWithAlphaComponent(0.08)]
+        case PlayerProgressView:
+            return [
+                "setProgressTintColor:": colorTheme.value.color(.Content).colorWithAlphaComponent(0.32),
+                "setTrackTintColor:": colorTheme.value.color(.Content).colorWithAlphaComponent(0.08)]
+        case DefaultSlider:
+            return [
+                "setMinimumTrackTintColor:": colorTheme.value.color(.Tint),
+                "setMaximumTrackTintColor:": colorTheme.value.color(.Content).colorWithAlphaComponent(0.08),
+                "setThumbTintColor:": colorTheme.value.color(.Content)]
+        case PlayerSlider:
+            return [
+                "setMinimumTrackTintColor:": colorTheme.value.color(.Content).colorWithAlphaComponent(0.16),
+                "setMaximumTrackTintColor:": UIColor.clearColor(),
+                "setThumbTintColor:": colorTheme.value.color(.Content)]
         }
     }
 }
