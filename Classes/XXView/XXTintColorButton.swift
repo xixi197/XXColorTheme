@@ -35,19 +35,7 @@ import UIKit
         super.init(coder: aDecoder)
     }
 
-    public override var selected: Bool {
-        didSet {
-            xx_updateTintColor()
-        }
-    }
-
-    public override var highlighted: Bool {
-        didSet {
-            xx_updateTintColor()
-        }
-    }
-
-    private func xx_updateTintColor() {
+    private func xx_updateImageTintColor() {
         if highlighted || selected {
             titleLabel?.tintColor = _highlightedTintColor ?? _normalTintColor
             imageView?.tintColor = _highlightedTintColor ?? _normalTintColor
@@ -57,13 +45,18 @@ import UIKit
         }
     }
 
+    public override var selected: Bool { didSet { xx_updateImageTintColor() } }
+
+    public override var highlighted: Bool { didSet { xx_updateImageTintColor() } }
+
     @IBInspectable var xx_normalTintColor: UIColor? {
         get { return _normalTintColor }
         set {
             if newValue == _normalTintColor { return }
             _normalTintColor = newValue
 
-            xx_updateTintColor()
+            setTitleColor(_normalTintColor, forState: .Normal)
+            xx_updateImageTintColor()
         }
     }
 
@@ -74,7 +67,10 @@ import UIKit
             _highlightedTintColor = newValue
 
             adjustsImageWhenHighlighted = newValue == nil
-            xx_updateTintColor()
+            for state: UIControlState in [.Highlighted, .Selected] {
+                setTitleColor(_highlightedTintColor, forState: state)
+            }
+            xx_updateImageTintColor()
         }
     }
 

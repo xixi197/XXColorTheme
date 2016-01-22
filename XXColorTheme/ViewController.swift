@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var LightButton: XXTintColorButton!
     @IBOutlet weak var LightButton2: XXTintColorButton!
 
+    @IBOutlet weak var defaultTextButton: XXTintColorButton!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,6 +24,7 @@ class ViewController: UIViewController {
         defaultButton.xx_colorViewType = .DefaultXXTintColorButton
         LightButton.xx_colorViewType = .LightXXTintColorButton
         LightButton2.xx_colorViewType = .LightXXTintColorButton2
+        defaultTextButton.xx_colorViewType = .DefaultXXTintColorButton
 
         update()
     }
