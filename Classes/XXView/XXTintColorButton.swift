@@ -29,8 +29,8 @@ import UIKit
             titleLabel?.textAlignment = .Center
         }
     }
-    var xx_imageWidth: CGFloat = 60
-    var xx_textTopMargin: CGFloat = 10
+    var xx_imageWidth: CGFloat = 60 // 82 * 82
+    var xx_textTopMargin: CGFloat = 8
 
     override init(frame: CGRect) {
         super.init(frame: frame)
