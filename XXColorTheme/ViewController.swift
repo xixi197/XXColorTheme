@@ -17,13 +17,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        button.xx_normalTemplateImage = UIImage(named: "like")
-        button.xx_highlightedTemplateImage = UIImage(named: "liked")
+//        button.xx_normalTemplateImage = UIImage(named: "like")
+//        button.xx_highlightedTemplateImage = UIImage(named: "liked")
         button.xx_colorViewType = .DefaultXXTintColorButton
 
-        button2.xx_normalTemplateImage = UIImage(named: "download")
-        button2.xx_highlightedTemplateImage = UIImage(named: "downloaded")
-        button2.xx_imageBorderWidth = 1
+//        button2.xx_normalTemplateImage = UIImage(named: "download")
+//        button2.xx_highlightedTemplateImage = UIImage(named: "downloaded")
+//        button2.xx_imageBorderWidth = 1
         button2.xx_colorViewType = .LightXXTintColorButton
     }
 

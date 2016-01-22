@@ -29,6 +29,10 @@
                                     <constraint firstAttribute="width" constant="60" id="H55-FV-XBF"/>
                                     <constraint firstAttribute="height" constant="60" id="paB-nl-4Va"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="xx_normalTemplateImage" value="like"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="xx_highlightedTemplateImage" value="liked"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="change" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ms3-Y8-BsM"/>
                                 </connections>
@@ -39,6 +43,13 @@
                                     <constraint firstAttribute="width" constant="60" id="9MN-mM-UXU"/>
                                     <constraint firstAttribute="height" constant="60" id="fzn-P9-OsQ"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="xx_imageBorderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="xx_normalTemplateImage" value="download"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="xx_highlightedTemplateImage" value="downloaded"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="change" destination="BYZ-38-t0r" eventType="touchUpInside" id="oEz-Qm-Han"/>
                                 </connections>
@@ -73,4 +84,10 @@
             <point key="canvasLocation" x="276" y="429"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="download" width="24" height="24"/>
+        <image name="downloaded" width="24" height="24"/>
+        <image name="like" width="24" height="24"/>
+        <image name="liked" width="24" height="24"/>
+    </resources>
 </document>

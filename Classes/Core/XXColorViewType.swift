@@ -8,7 +8,7 @@
 
 import UIKit
 
-enum XXColorViewType: String {
+public enum XXColorViewType: String {
     case DefaultXXTintColorButton
     case LightXXTintColorButton
     case Light2XXTintColorButton

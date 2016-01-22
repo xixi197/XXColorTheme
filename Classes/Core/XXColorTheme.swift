@@ -66,7 +66,7 @@ public enum XXColorTheme {
             case .ContentBackground:
                 return UIColor.blackColor()
             case .Tint:
-                return UIColor.whiteColor()
+                return UIColor(hex6: 0x00B9F2)
             case .Mark:
                 return UIColor(hex6: 0xF44336)
             case .Background:

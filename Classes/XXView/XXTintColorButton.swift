@@ -8,16 +8,19 @@
 
 import UIKit
 
-public class XXTintColorButton: UIButton {
+@IBDesignable public class XXTintColorButton: UIButton {
 
+    // tintColor
     private var _normalTintColor: UIColor?
     private var _highlightedTintColor: UIColor?
+
+    // image
     private var _normalTemplateImage: UIImage?
     private var _highlightedTemplateImage: UIImage?
 
-    var xx_imageBorderWidth: CGFloat = 0
-    var xx_imageBorderRadius: CGFloat = 30
-    var xx_imageBorderAlpha: CGFloat = 0.16
+    private var _imageBorderWidth: CGFloat = 0
+    private var _imageBorderRadius: CGFloat = 30
+    private var _imageBorderAlpha: CGFloat = 0.16
 
     var xx_isTextDown = false
     var xx_imageWidth: CGFloat = 60
@@ -31,6 +34,116 @@ public class XXTintColorButton: UIButton {
         super.init(coder: aDecoder)
     }
 
+    public override var selected: Bool {
+        didSet {
+            xx_updateTintColor()
+        }
+    }
+
+    public override var highlighted: Bool {
+        didSet {
+            xx_updateTintColor()
+        }
+    }
+
+    private func xx_updateTintColor() {
+        if highlighted || selected {
+            titleLabel?.tintColor = _highlightedTintColor ?? _normalTintColor
+            imageView?.tintColor = _highlightedTintColor ?? _normalTintColor
+        } else {
+            titleLabel?.tintColor = _normalTintColor
+            imageView?.tintColor = _normalTintColor
+        }
+    }
+
+    @IBInspectable var xx_normalTintColor: UIColor? {
+        get { return _normalTintColor }
+        set {
+            if newValue == _normalTintColor { return }
+            _normalTintColor = newValue
+
+            xx_updateTintColor()
+        }
+    }
+
+    @IBInspectable var xx_highlightedTintColor: UIColor? {
+        get { return _highlightedTintColor }
+        set {
+            if newValue == _highlightedTintColor { return }
+            _highlightedTintColor = newValue
+
+            adjustsImageWhenHighlighted = newValue == nil
+            xx_updateTintColor()
+        }
+    }
+
+    private func xx_updateTemplateImage(templateImage: UIImage?, forState state: UIControlState) {
+        setImage(templateImage?.borderedImage(xx_imageBorderWidth, radius: xx_imageBorderRadius, alpha: xx_imageBorderAlpha), forState: state)
+    }
+
+    private func xx_updateNormalTemplateImage() {
+        xx_updateTemplateImage(_normalTemplateImage, forState: .Normal)
+    }
+
+    private func xx_updateHighlightedTemplateImage() {
+        for state: UIControlState in [.Highlighted, .Selected] {
+            xx_updateTemplateImage(_highlightedTemplateImage, forState: state)
+        }
+    }
+
+    @IBInspectable var xx_normalTemplateImage: UIImage? {
+        get { return _normalTemplateImage }
+        set {
+            if newValue == _normalTemplateImage { return }
+            _normalTemplateImage = newValue
+
+            xx_updateNormalTemplateImage()
+        }
+    }
+
+    @IBInspectable var xx_highlightedTemplateImage: UIImage? {
+        get { return _highlightedTemplateImage }
+        set {
+            if newValue == _highlightedTemplateImage { return }
+            _highlightedTemplateImage = newValue
+
+            xx_updateHighlightedTemplateImage()
+        }
+    }
+
+    @IBInspectable var xx_imageBorderWidth: CGFloat {
+        get { return _imageBorderWidth }
+        set {
+            if newValue == _imageBorderWidth { return }
+            _imageBorderWidth = newValue
+
+            xx_updateNormalTemplateImage()
+            xx_updateHighlightedTemplateImage()
+        }
+    }
+
+    @IBInspectable var xx_imageBorderRadius: CGFloat {
+        get { return _imageBorderRadius }
+        set {
+            if newValue == _imageBorderRadius { return }
+            _imageBorderRadius = newValue
+
+            xx_updateNormalTemplateImage()
+            xx_updateHighlightedTemplateImage()
+        }
+    }
+
+    @IBInspectable var xx_imageBorderAlpha: CGFloat {
+        get { return _imageBorderAlpha }
+        set {
+            if newValue == _imageBorderAlpha { return }
+            _imageBorderAlpha = newValue
+
+            xx_updateNormalTemplateImage()
+            xx_updateHighlightedTemplateImage()
+        }
+    }
+
     public override func imageRectForContentRect(contentRect: CGRect) -> CGRect {
         return xx_isTextDown ?
             CGRectMake((contentRect.size.width - xx_imageWidth) / 2, 0, xx_imageWidth, xx_imageWidth) :
@@ -41,60 +154,5 @@ public class XXTintColorButton: UIButton {
         return xx_isTextDown ?
             CGRectMake(0, xx_imageWidth + xx_textTopMargin, contentRect.size.width, contentRect.size.height - xx_imageWidth - xx_textTopMargin) :
             super.titleRectForContentRect(contentRect)
-    }
-
-    private func _setTintColor(color: UIColor?, withImage image: UIImage?, forState state: UIControlState) {
-        setTitleColor(color, forState: state)
-        setImage(image?.borderedImage(xx_imageBorderWidth, radius: xx_imageBorderRadius, alpha: xx_imageBorderAlpha).tintedImage(color), forState: state)
-    }
-
-    private func xx_updateNormalTintColor() {
-        _setTintColor(_normalTintColor, withImage: _normalTemplateImage, forState: .Normal)
-    }
-
-    private func xx_updateHighlightedTintColor() {
-        for state: UIControlState in [.Highlighted, .Selected] {
-            _setTintColor(_highlightedTintColor, withImage: _highlightedTemplateImage ?? _normalTemplateImage, forState: state)
-        }
-    }
-
-    var xx_normalTintColor: UIColor? {
-        get { return _normalTintColor }
-        set {
-            if newValue == _normalTintColor { return }
-            _normalTintColor = newValue
-
-            xx_updateNormalTintColor()
-        }
-    }
-
-    var xx_highlightedTintColor: UIColor? {
-        get { return _highlightedTintColor }
-        set {
-            if newValue == _highlightedTintColor { return }
-            _highlightedTintColor = newValue
-
-            xx_updateHighlightedTintColor()
-        }
-    }
-
-    var xx_normalTemplateImage: UIImage? {
-        get { return _normalTemplateImage }
-        set {
-            if newValue == _normalTemplateImage { return }
-            _normalTemplateImage = newValue
-
-            xx_updateNormalTintColor()
-        }
-    }
-
-    var xx_highlightedTemplateImage: UIImage? {
-        get { return _highlightedTemplateImage }
-        set {
-            if newValue == _highlightedTemplateImage { return }
-            _highlightedTemplateImage = newValue
-            
-            xx_updateHighlightedTintColor()
-        }
     }
 }
