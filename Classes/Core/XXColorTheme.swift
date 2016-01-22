@@ -25,7 +25,7 @@ enum XXColorType {
     case Random
 }
 
-public enum XXColorTheme {
+public enum XXColorTheme: String {
     case Dark
     case Light
     case Custom

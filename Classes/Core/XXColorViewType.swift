@@ -9,6 +9,7 @@
 import UIKit
 
 public enum XXColorViewType: String {
+    case DefaultBackgroundView
     case DefaultXXTintColorButton
     case LightXXTintColorButton
     case LightXXTintColorButton2
@@ -16,6 +17,9 @@ public enum XXColorViewType: String {
     var dictionary: [String: UIColor] {
         let colorTheme = XXColorTheme.currentTheme
         switch self {
+        case DefaultBackgroundView:
+            return [
+                "setBackgroundColor:": colorTheme.value.color(.Background)]
         case DefaultXXTintColorButton:
             return [
                 "setXx_normalTintColor:": colorTheme.value.color(.Content),
