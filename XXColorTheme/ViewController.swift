@@ -12,19 +12,24 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var defaultButton: XXTintColorButton!
-    @IBOutlet weak var LightButton: XXTintColorButton!
-    @IBOutlet weak var LightButton2: XXTintColorButton!
+    @IBOutlet weak var lightButton: XXTintColorButton!
+    @IBOutlet weak var tintButton: XXTintColorButton!
 
     @IBOutlet weak var defaultTextButton: XXTintColorButton!
+    @IBOutlet weak var lightTextButton: XXTintColorButton!
+    @IBOutlet weak var tintTextButton: XXTintColorButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         view.xx_colorViewType = .DefaultBackgroundView
         defaultButton.xx_colorViewType = .DefaultXXTintColorButton
-        LightButton.xx_colorViewType = .LightXXTintColorButton
-        LightButton2.xx_colorViewType = .LightXXTintColorButton2
+        lightButton.xx_colorViewType = .LightXXTintColorButton
+        tintButton.xx_colorViewType = .TintXXTintColorButton
+
         defaultTextButton.xx_colorViewType = .DefaultXXTintColorButton
+        lightTextButton.xx_colorViewType = .LightXXTintColorButton
+        tintTextButton.xx_colorViewType = .TintXXTintColorButton
 
         update()
     }

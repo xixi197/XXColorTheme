@@ -37,11 +37,9 @@ import UIKit
 
     private func xx_updateImageTintColor() {
         if highlighted || selected {
-            titleLabel?.tintColor = _highlightedTintColor ?? _normalTintColor
-            imageView?.tintColor = _highlightedTintColor ?? _normalTintColor
+            tintColor = _highlightedTintColor ?? _normalTintColor
         } else {
-            titleLabel?.tintColor = _normalTintColor
-            imageView?.tintColor = _normalTintColor
+            tintColor = _normalTintColor
         }
     }
 
@@ -66,7 +64,6 @@ import UIKit
             if newValue == _highlightedTintColor { return }
             _highlightedTintColor = newValue
 
-            adjustsImageWhenHighlighted = newValue == nil
             for state: UIControlState in [.Highlighted, .Selected] {
                 setTitleColor(_highlightedTintColor, forState: state)
             }

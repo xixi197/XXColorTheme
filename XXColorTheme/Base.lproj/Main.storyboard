@@ -37,6 +37,71 @@
                                     <action selector="change" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ms3-Y8-BsM"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NxM-q6-m4x" customClass="XXTintColorButton" customModule="XXColorTheme" customModuleProvider="target">
+                                <rect key="frame" x="208" y="99" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="lMA-af-Ehg"/>
+                                    <constraint firstAttribute="width" constant="60" id="ygs-hA-7aX"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="xx_normalTemplateImage" value="download"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="xx_highlightedTemplateImage" value="downloaded"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="change" destination="BYZ-38-t0r" eventType="touchUpInside" id="nRJ-GL-t9N"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bb3-gN-tmw" customClass="XXTintColorButton" customModule="XXColorTheme" customModuleProvider="target">
+                                <rect key="frame" x="28" y="189" width="54" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="7c6-5I-fKT"/>
+                                    <constraint firstAttribute="width" constant="60" id="c6v-jX-yOk"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="c6v-jX-yOk"/>
+                                        <exclude reference="7c6-5I-fKT"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="change" destination="BYZ-38-t0r" eventType="touchUpInside" id="bwc-TU-eXQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gIw-Cc-VKs" customClass="XXTintColorButton" customModule="XXColorTheme" customModuleProvider="target">
+                                <rect key="frame" x="118" y="189" width="54" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="hQX-28-3ni"/>
+                                    <constraint firstAttribute="width" constant="60" id="hg7-GN-3Qu"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="hg7-GN-3Qu"/>
+                                        <exclude reference="hQX-28-3ni"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="change" destination="BYZ-38-t0r" eventType="touchUpInside" id="bNe-tq-iyy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="li3-Ks-Aeh" customClass="XXTintColorButton" customModule="XXColorTheme" customModuleProvider="target">
+                                <rect key="frame" x="208" y="189" width="54" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="JFJ-9h-v7c"/>
+                                    <constraint firstAttribute="width" constant="60" id="yns-Hh-LfI"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="yns-Hh-LfI"/>
+                                        <exclude reference="JFJ-9h-v7c"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="change" destination="BYZ-38-t0r" eventType="touchUpInside" id="SzZ-Xe-isp"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zob-Do-oUo" customClass="XXTintColorButton" customModule="XXColorTheme" customModuleProvider="target">
                                 <rect key="frame" x="118" y="99" width="60" height="60"/>
                                 <constraints>
@@ -54,37 +119,6 @@
                                     <action selector="change" destination="BYZ-38-t0r" eventType="touchUpInside" id="oEz-Qm-Han"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NxM-q6-m4x" customClass="XXTintColorButton" customModule="XXColorTheme" customModuleProvider="target">
-                                <rect key="frame" x="208" y="99" width="60" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="lMA-af-Ehg"/>
-                                    <constraint firstAttribute="width" constant="60" id="ygs-hA-7aX"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="xx_normalTemplateImage" value="download"/>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="xx_highlightedTemplateImage" value="downloaded"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="change" destination="BYZ-38-t0r" eventType="touchUpInside" id="nRJ-GL-t9N"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bb3-gN-tmw" customClass="XXTintColorButton" customModule="XXColorTheme" customModuleProvider="target">
-                                <rect key="frame" x="28" y="167" width="60" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="7c6-5I-fKT"/>
-                                    <constraint firstAttribute="width" constant="60" id="c6v-jX-yOk"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="c6v-jX-yOk"/>
-                                        <exclude reference="7c6-5I-fKT"/>
-                                    </mask>
-                                </variation>
-                                <connections>
-                                    <action selector="change" destination="BYZ-38-t0r" eventType="touchUpInside" id="bwc-TU-eXQ"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -92,13 +126,17 @@
                             <constraint firstItem="NxM-q6-m4x" firstAttribute="top" secondItem="Laz-pU-XFJ" secondAttribute="top" id="1Pq-Ha-cex"/>
                             <constraint firstItem="Laz-pU-XFJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="28" id="6Hd-6P-9hP"/>
                             <constraint firstItem="Bb3-gN-tmw" firstAttribute="leading" secondItem="Laz-pU-XFJ" secondAttribute="leading" id="8nV-xq-XI3"/>
+                            <constraint firstItem="li3-Ks-Aeh" firstAttribute="top" secondItem="Bb3-gN-tmw" secondAttribute="top" id="9Lh-8K-Jhn"/>
                             <constraint firstItem="zjr-MM-gXR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="HlQ-9l-Gy0"/>
+                            <constraint firstItem="gIw-Cc-VKs" firstAttribute="leading" secondItem="Zob-Do-oUo" secondAttribute="leading" id="KNQ-VF-hv0"/>
                             <constraint firstItem="Bb3-gN-tmw" firstAttribute="top" secondItem="Laz-pU-XFJ" secondAttribute="bottom" constant="30" id="LPA-w8-q6E"/>
                             <constraint firstItem="Laz-pU-XFJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="79" id="Lon-4v-vlS"/>
                             <constraint firstItem="zjr-MM-gXR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="O75-wQ-z5I"/>
                             <constraint firstItem="Zob-Do-oUo" firstAttribute="top" secondItem="Laz-pU-XFJ" secondAttribute="top" id="PGY-jk-W4D"/>
+                            <constraint firstItem="li3-Ks-Aeh" firstAttribute="leading" secondItem="NxM-q6-m4x" secondAttribute="leading" id="Rc6-C8-wxA"/>
                             <constraint firstItem="NxM-q6-m4x" firstAttribute="leading" secondItem="Zob-Do-oUo" secondAttribute="trailing" constant="30" id="csB-Lm-8LR"/>
                             <constraint firstItem="zjr-MM-gXR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="16" id="h3x-RA-M92"/>
+                            <constraint firstItem="gIw-Cc-VKs" firstAttribute="top" secondItem="Bb3-gN-tmw" secondAttribute="top" id="lRS-Bb-g9R"/>
                             <constraint firstItem="Laz-pU-XFJ" firstAttribute="top" secondItem="zjr-MM-gXR" secondAttribute="bottom" constant="43" id="pzB-NU-lDf"/>
                         </constraints>
                         <variation key="default">
@@ -109,11 +147,13 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="LightButton" destination="Zob-Do-oUo" id="Fu1-KK-yat"/>
-                        <outlet property="LightButton2" destination="NxM-q6-m4x" id="GFU-He-GL9"/>
                         <outlet property="defaultButton" destination="Laz-pU-XFJ" id="ghR-VB-rtG"/>
                         <outlet property="defaultTextButton" destination="Bb3-gN-tmw" id="wyf-Yu-frL"/>
                         <outlet property="label" destination="zjr-MM-gXR" id="Xfo-QY-080"/>
+                        <outlet property="lightButton" destination="Zob-Do-oUo" id="KoO-V0-12S"/>
+                        <outlet property="lightTextButton" destination="gIw-Cc-VKs" id="q0N-Vg-gZ1"/>
+                        <outlet property="tintButton" destination="NxM-q6-m4x" id="1ec-Bh-6Ba"/>
+                        <outlet property="tintTextButton" destination="li3-Ks-Aeh" id="y6P-Dw-OuQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
