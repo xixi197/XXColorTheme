@@ -24,7 +24,11 @@ import UIKit
     private var _imageBorderRadius: CGFloat = 30
     private var _imageBorderAlpha: CGFloat = 0.16
 
-    var xx_isTextDown = false
+    @IBInspectable var xx_isTextDown: Bool = false {
+        didSet {
+            titleLabel?.textAlignment = .Center
+        }
+    }
     var xx_imageWidth: CGFloat = 60
     var xx_textTopMargin: CGFloat = 10
 

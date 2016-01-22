@@ -52,7 +52,7 @@ public extension UIImage {
         let context = UIGraphicsGetCurrentContext()
         CGContextSetLineWidth(context, width)
         CGContextAddEllipseInRect(context, rect.insetBy(dx: width / 2, dy: width / 2))
-        CGContextStrokePath(context);
+        CGContextStrokePath(context)
 
         sourceImage.drawInRect(rect)
 
