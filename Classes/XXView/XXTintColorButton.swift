@@ -36,14 +36,14 @@ import UIKit
     }
 
     private func xx_updateImageTintColor() {
-        if highlighted || selected {
+        if highlighted {
             tintColor = _highlightedTintColor ?? _normalTintColor
         } else {
             tintColor = _normalTintColor
         }
     }
 
-    public override var selected: Bool { didSet { xx_updateImageTintColor() } }
+//    public override var selected: Bool { didSet { xx_updateImageTintColor() } }
 
     public override var highlighted: Bool { didSet { xx_updateImageTintColor() } }
 
@@ -64,6 +64,7 @@ import UIKit
             if newValue == _highlightedTintColor { return }
             _highlightedTintColor = newValue
 
+            adjustsImageWhenHighlighted = newValue == nil
             for state: UIControlState in [.Highlighted, .Selected] {
                 setTitleColor(_highlightedTintColor, forState: state)
             }

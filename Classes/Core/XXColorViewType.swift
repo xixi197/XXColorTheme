@@ -11,6 +11,7 @@ import UIKit
 public enum XXColorViewType: String {
     case DefaultBackgroundView
     case DefaultXXTintColorButton
+    case MarkXXTintColorButton
     case LightXXTintColorButton
     case LightXXTintColorButton2
     case TintXXTintColorButton
@@ -25,6 +26,10 @@ public enum XXColorViewType: String {
             return [
                 "setXx_normalTintColor:": colorTheme.value.color(.Content),
                 "setXx_highlightedTintColor:": colorTheme.value.color(.Tint)]
+        case MarkXXTintColorButton:
+            return [
+                "setXx_normalTintColor:": colorTheme.value.color(.Content),
+                "setXx_highlightedTintColor:": colorTheme.value.color(.Mark)]
         case LightXXTintColorButton:
             return [
                 "setXx_normalTintColor:": colorTheme.value.color(.Content).colorWithAlphaComponent(0.48),
@@ -35,7 +40,8 @@ public enum XXColorViewType: String {
                 "setXx_highlightedTintColor:": colorTheme.value.color(.Content)]
         case TintXXTintColorButton:
             return [
-                "setXx_normalTintColor:": colorTheme.value.color(.Tint)]
+                "setXx_normalTintColor:": colorTheme.value.color(.Tint),
+                "setXx_highlightedTintColor:": colorTheme.value.color(.Tint).colorWithAlphaComponent(0.48)]
         }
     }
 }
