@@ -13,6 +13,7 @@ import UIKit
     // tintColor ColorTheme
     private var _normalTintColor: UIColor?
     private var _highlightedTintColor: UIColor?
+    private var _selectedTintColor: UIColor?
 
     // image
     private var _normalTemplateImage: UIImage?
@@ -36,14 +37,22 @@ import UIKit
     }
 
     private func xx_updateImageTintColor() {
-        if highlighted {
-            tintColor = _highlightedTintColor ?? _normalTintColor
+        if selected {
+            if highlighted {
+                tintColor = _highlightedTintColor ?? _normalTintColor
+            } else {
+                tintColor = _selectedTintColor ?? _normalTintColor
+            }
         } else {
-            tintColor = _normalTintColor
+            if highlighted {
+                tintColor = _selectedTintColor ?? _highlightedTintColor ?? _normalTintColor
+            } else {
+                tintColor = _normalTintColor
+            }
         }
     }
 
-//    public override var selected: Bool { didSet { xx_updateImageTintColor() } }
+    public override var selected: Bool { didSet { xx_updateImageTintColor() } }
 
     public override var highlighted: Bool { didSet { xx_updateImageTintColor() } }
 
@@ -65,9 +74,19 @@ import UIKit
             _highlightedTintColor = newValue
 
             adjustsImageWhenHighlighted = newValue == nil
-            for state: UIControlState in [.Highlighted, .Selected] {
-                setTitleColor(_highlightedTintColor, forState: state)
-            }
+            setTitleColor(_highlightedTintColor, forState: .Highlighted)
+            xx_updateImageTintColor()
+        }
+    }
+
+    @IBInspectable var xx_selectedTintColor: UIColor? {
+        get { return _selectedTintColor }
+        set {
+            if newValue == _selectedTintColor { return }
+            _selectedTintColor = newValue
+
+            adjustsImageWhenHighlighted = newValue == nil
+            setTitleColor(_highlightedTintColor, forState: .Selected)
             xx_updateImageTintColor()
         }
     }

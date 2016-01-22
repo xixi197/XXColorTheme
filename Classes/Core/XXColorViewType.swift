@@ -29,7 +29,7 @@ public enum XXColorViewType: String {
         case MarkXXTintColorButton:
             return [
                 "setXx_normalTintColor:": colorTheme.value.color(.Content),
-                "setXx_highlightedTintColor:": colorTheme.value.color(.Mark)]
+                "setXx_selectedTintColor:": colorTheme.value.color(.Mark)]
         case LightXXTintColorButton:
             return [
                 "setXx_normalTintColor:": colorTheme.value.color(.Content).colorWithAlphaComponent(0.48),
