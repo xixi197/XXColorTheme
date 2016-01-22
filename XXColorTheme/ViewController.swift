@@ -12,6 +12,14 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var changeButton: XXTintColorButton!
 
+    @IBOutlet weak var defaultColLabel: UILabel!
+    @IBOutlet weak var lightColLabel: UILabel!
+    @IBOutlet weak var tintColLabel: UILabel!
+    @IBOutlet weak var normalRowLabel: UILabel!
+    @IBOutlet weak var selectedRowLabel: UILabel!
+    @IBOutlet weak var borderRowLabel: UILabel!
+    @IBOutlet weak var textRowLabel: UILabel!
+
     @IBOutlet weak var defaultButton: XXTintColorButton!
     @IBOutlet weak var lightButton: XXTintColorButton!
     @IBOutlet weak var tintButton: XXTintColorButton!
@@ -33,6 +41,14 @@ class ViewController: UIViewController {
 
         view.xx_colorViewType = .DefaultBackgroundView
         changeButton.xx_colorViewType = .DefaultXXTintColorButton
+
+        defaultColLabel.xx_colorViewType = .DefaultLabel
+        lightColLabel.xx_colorViewType = .DefaultLabel
+        tintColLabel.xx_colorViewType = .DefaultLabel
+        normalRowLabel.xx_colorViewType = .DefaultLabel
+        selectedRowLabel.xx_colorViewType = .DefaultLabel
+        borderRowLabel.xx_colorViewType = .DefaultLabel
+        textRowLabel.xx_colorViewType = .DefaultLabel
 
         defaultButton.xx_colorViewType = .DefaultXXTintColorButton
         lightButton.xx_colorViewType = .LightXXTintColorButton

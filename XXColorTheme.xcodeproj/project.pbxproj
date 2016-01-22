@@ -113,8 +113,8 @@
 			isa = PBXGroup;
 			children = (
 				C416251A1C48CF96007C1C82 /* XXColorTheme.swift */,
-				C46CBFD21C50EBB100E9B575 /* XXColorViewType.swift */,
 				C46CBFCA1C50C6B500E9B575 /* UIView+XXColorTheme.swift */,
+				C46CBFD21C50EBB100E9B575 /* XXColorViewType.swift */,
 			);
 			name = Core;
 			path = Classes/Core;

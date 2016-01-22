@@ -10,11 +10,14 @@ import UIKit
 
 public enum XXColorViewType: String {
     case DefaultBackgroundView
+
+    case DefaultLabel
+
     case DefaultXXTintColorButton
-    case MarkXXTintColorButton
     case LightXXTintColorButton
     case LightXXTintColorButton2
     case TintXXTintColorButton
+    case MarkXXTintColorButton
 
     var dictionary: [String: UIColor] {
         let colorTheme = XXColorTheme.currentTheme
@@ -22,14 +25,15 @@ public enum XXColorViewType: String {
         case DefaultBackgroundView:
             return [
                 "setBackgroundColor:": colorTheme.value.color(.Background)]
+
+        case DefaultLabel:
+            return [
+                "setTextColor:": colorTheme.value.color(.Content)]
+
         case DefaultXXTintColorButton:
             return [
                 "setXx_normalTintColor:": colorTheme.value.color(.Content),
                 "setXx_highlightedTintColor:": colorTheme.value.color(.Tint)]
-        case MarkXXTintColorButton:
-            return [
-                "setXx_normalTintColor:": colorTheme.value.color(.Content),
-                "setXx_selectedTintColor:": colorTheme.value.color(.Mark)]
         case LightXXTintColorButton:
             return [
                 "setXx_normalTintColor:": colorTheme.value.color(.Content).colorWithAlphaComponent(0.48),
@@ -42,6 +46,10 @@ public enum XXColorViewType: String {
             return [
                 "setXx_normalTintColor:": colorTheme.value.color(.Tint),
                 "setXx_highlightedTintColor:": colorTheme.value.color(.Tint).colorWithAlphaComponent(0.48)]
+        case MarkXXTintColorButton:
+            return [
+                "setXx_normalTintColor:": colorTheme.value.color(.Content),
+                "setXx_selectedTintColor:": colorTheme.value.color(.Mark)]
         }
     }
 }
