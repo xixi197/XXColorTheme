@@ -13,30 +13,63 @@ import UIKit
     // tintColor ColorTheme
     private var _normalTintColor: UIColor?
     private var _highlightedTintColor: UIColor?
-    private var _selectedTintColor: UIColor?
 
-    // image
-    private var _normalTemplateImage: UIImage?
-    private var _highlightedTemplateImage: UIImage?
-
-    // all image
-    private var _imageBorderWidth: CGFloat = 0
-    private var _imageBorderRadius: CGFloat = 30
-    private var _imageBorderAlpha: CGFloat = 0.16
-
-    @IBInspectable var xx_isTextDown: Bool = false {
-        didSet {
-            titleLabel?.textAlignment = .Center
-        }
-    }
-    var xx_imageWidth: CGFloat = 60 // 82 * 82
-    var xx_textTopMargin: CGFloat = 8
+    private var _borderWidth: CGFloat = 0//big1
+    private var _cornerRadius: CGFloat = 0//big2
 
     override init(frame: CGRect) {
         super.init(frame: frame)
+        initButton()
     }
 
     public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        initButton()
+    }
+
+    private func initButton() {
+        clipsToBounds = true
+    }
+
+    @IBInspectable var xx_normalTintColor: UIColor? {
+        get { return _normalTintColor }
+        set {
+            if newValue == _normalTintColor { return }
+            _normalTintColor = newValue
+
+            setTitleColor(_normalTintColor, forState: .Normal)
+            layer.borderColor = _normalTintColor?.CGColor
+            setBackgroundImage(_normalTintColor?.image, forState: .Highlighted)
+        }
+    }
+
+    @IBInspectable var xx_highlightedTintColor: UIColor? {
+        get { return _highlightedTintColor }
+        set {
+            if newValue == _highlightedTintColor { return }
+            _highlightedTintColor = newValue
+
+            setTitleColor(_highlightedTintColor, forState: .Highlighted)
+        }
+    }
+
+    @IBInspectable var xx_borderWidth: CGFloat {
+        get { return _borderWidth }
+        set {
+            if newValue == _borderWidth { return }
+            _borderWidth = newValue
+
+            layer.borderWidth = _borderWidth
+        }
+    }
+
+    @IBInspectable var xx_cornerRadius: CGFloat {
+        get { return _cornerRadius }
+        set {
+            if newValue == _cornerRadius { return }
+            _cornerRadius = newValue
+            
+            layer.cornerRadius = _cornerRadius
+        }
     }
 }

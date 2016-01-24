@@ -24,20 +24,23 @@ import UIKit
     private var _imageBorderRadius: CGFloat = 30
     private var _imageBorderAlpha: CGFloat = 0.16
 
-    @IBInspectable var xx_isTextDown: Bool = false {
-        didSet {
-            titleLabel?.textAlignment = .Center
-        }
-    }
+    @IBInspectable var xx_isTextDown: Bool = false
     var xx_imageWidth: CGFloat = 60 // 82 * 82
     var xx_textTopMargin: CGFloat = 8
 
     override init(frame: CGRect) {
         super.init(frame: frame)
+        initButton()
     }
 
     public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        initButton()
+    }
+
+    private func initButton() {
+        clipsToBounds = true
+        titleLabel?.textAlignment = .Center
     }
 
     private func xx_updateImageTintColor() {
@@ -77,7 +80,7 @@ import UIKit
             if newValue == _highlightedTintColor { return }
             _highlightedTintColor = newValue
 
-            adjustsImageWhenHighlighted = newValue == nil
+            adjustsImageWhenHighlighted = _highlightedTintColor == nil
             setTitleColor(_highlightedTintColor, forState: .Highlighted)
             xx_updateImageTintColor()
         }
@@ -89,7 +92,7 @@ import UIKit
             if newValue == _selectedTintColor { return }
             _selectedTintColor = newValue
 
-            adjustsImageWhenHighlighted = newValue == nil
+            adjustsImageWhenHighlighted = _highlightedTintColor == nil
             setTitleColor(_highlightedTintColor, forState: .Selected)
             xx_updateImageTintColor()
         }
