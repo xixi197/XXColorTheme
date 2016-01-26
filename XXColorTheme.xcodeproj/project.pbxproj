@@ -16,7 +16,7 @@
 		C46CBFCB1C50C6B500E9B575 /* UIView+XXColorStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46CBFCA1C50C6B500E9B575 /* UIView+XXColorStyle.swift */; };
 		C46CBFD01C50D9D200E9B575 /* ImageColoredUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46CBFCD1C50D9D200E9B575 /* ImageColoredUtils.swift */; };
 		C46CBFD11C50D9D200E9B575 /* XXTintColorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46CBFCF1C50D9D200E9B575 /* XXTintColorButton.swift */; };
-		C46CBFD31C50EBB100E9B575 /* UIView+XXColorCategory1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46CBFD21C50EBB100E9B575 /* UIView+XXColorCategory1.swift */; };
+		C46CBFD31C50EBB100E9B575 /* UIView+XXColorCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46CBFD21C50EBB100E9B575 /* UIView+XXColorCategory.swift */; };
 		C46CBFD91C51F29000E9B575 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C46CBFD81C51F29000E9B575 /* Default-568h@2x.png */; };
 		C46CBFDB1C52317600E9B575 /* XXRoundCornerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46CBFDA1C52317600E9B575 /* XXRoundCornerButton.swift */; };
 		C4BEF1531C56123000B3989C /* XXFontSizeCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BEF1521C56123000B3989C /* XXFontSizeCategory.swift */; };
@@ -36,7 +36,7 @@
 		C46CBFCA1C50C6B500E9B575 /* UIView+XXColorStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+XXColorStyle.swift"; sourceTree = "<group>"; };
 		C46CBFCD1C50D9D200E9B575 /* ImageColoredUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageColoredUtils.swift; sourceTree = "<group>"; };
 		C46CBFCF1C50D9D200E9B575 /* XXTintColorButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XXTintColorButton.swift; sourceTree = "<group>"; };
-		C46CBFD21C50EBB100E9B575 /* UIView+XXColorCategory1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+XXColorCategory1.swift"; sourceTree = "<group>"; };
+		C46CBFD21C50EBB100E9B575 /* UIView+XXColorCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+XXColorCategory.swift"; sourceTree = "<group>"; };
 		C46CBFD81C51F29000E9B575 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		C46CBFDA1C52317600E9B575 /* XXRoundCornerButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XXRoundCornerButton.swift; sourceTree = "<group>"; };
 		C4BEF1521C56123000B3989C /* XXFontSizeCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XXFontSizeCategory.swift; sourceTree = "<group>"; };
@@ -122,7 +122,7 @@
 				C4BEF1521C56123000B3989C /* XXFontSizeCategory.swift */,
 				C46CBFCA1C50C6B500E9B575 /* UIView+XXColorStyle.swift */,
 				C4BEF1541C56201D00B3989C /* UIView+XXFontSizeStyle.swift */,
-				C46CBFD21C50EBB100E9B575 /* UIView+XXColorCategory1.swift */,
+				C46CBFD21C50EBB100E9B575 /* UIView+XXColorCategory.swift */,
 			);
 			name = Core;
 			path = Classes/Core;
@@ -273,7 +273,7 @@
 				C46CBFDB1C52317600E9B575 /* XXRoundCornerButton.swift in Sources */,
 				C416251B1C48CF96007C1C82 /* XXColorCategory.swift in Sources */,
 				C4BEF1531C56123000B3989C /* XXFontSizeCategory.swift in Sources */,
-				C46CBFD31C50EBB100E9B575 /* UIView+XXColorCategory1.swift in Sources */,
+				C46CBFD31C50EBB100E9B575 /* UIView+XXColorCategory.swift in Sources */,
 				C46CBFD11C50D9D200E9B575 /* XXTintColorButton.swift in Sources */,
 				C4BEF1551C56201D00B3989C /* UIView+XXFontSizeStyle.swift in Sources */,
 				C46CBFD01C50D9D200E9B575 /* ImageColoredUtils.swift in Sources */,
