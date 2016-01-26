@@ -66,9 +66,9 @@ public enum XXColorCategory: String {
             .Mark: UIColor(hex6: 0xF44336)],
         .Custom : [
             .Light: UIColor.blackColor(),
-            .Dark: UIColor.whiteColor(),
-            .Back: UIColor(hex6: 0xDEDEDE),
-            .Tint: UIColor(hex6: 0x00B9F2),
+            .Dark: UIColor.blackColor(),
+            .Back: UIColor(hex6: 0x212121),
+            .Tint: UIColor(hex6: 0xF44336),
             .Mark: UIColor(hex6: 0xF44336)]]
 
     func color(style: XXColorStyle) -> UIColor {

@@ -8,6 +8,15 @@
 
 import UIKit
 
+//navgation
+//title font18 light
+//rightButton font16 tint
+
+//player
+//enTitle
+//cnTitle font10 light
+//sep
+
 extension UIView {
     var xx_colorDictionary: [String: UIColor]? {
         guard let style = xx_colorStyle else { return nil }
@@ -15,7 +24,7 @@ extension UIView {
 
         if self is UILabel {
             //Light
-            //navgation title font18
+
             //playlist cell title font18
             //player en title left20 right 8
             //player cn title font10 left 8
