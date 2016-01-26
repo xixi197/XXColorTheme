@@ -68,7 +68,7 @@ import UIKit
         set {
             if newValue == _cornerRadius { return }
             _cornerRadius = newValue
-            
+
             layer.cornerRadius = _cornerRadius
         }
     }

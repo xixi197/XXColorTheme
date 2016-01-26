@@ -8,9 +8,8 @@
 
 import UIKit
 import RxSwift
-import UIColor_Hex_Swift
 
-enum XXFontTextStyle: String {
+enum XXFontSizeStyle: String {
     case Title1
     case Title2
     case Title3
@@ -33,7 +32,7 @@ public enum XXFontSizeCategory: String {
     //    case ExtraExtraExtraLarge
 
     static let preferredFontSizeCategory = Variable(XXFontSizeCategory.Large)
-    static let fontSizeDictionary: [XXFontSizeCategory : [XXFontTextStyle : CGFloat]] = [
+    static let fontSizeDictionary: [XXFontSizeCategory : [XXFontSizeStyle : CGFloat]] = [
         .Large : [
             .Title1: 18,
             .Title2: 18,
@@ -57,7 +56,7 @@ public enum XXFontSizeCategory: String {
             .Caption1: 18,
             .Caption2: 18]]
 
-    func fontSize(style: XXFontTextStyle) -> CGFloat {
+    func fontSize(style: XXFontSizeStyle) -> CGFloat {
         return XXFontSizeCategory.fontSizeDictionary[self]![style]!
     }
 }

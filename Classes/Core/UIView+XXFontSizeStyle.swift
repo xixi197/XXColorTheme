@@ -1,5 +1,5 @@
 //
-//  UIView+XXFontSizeCategory.swift
+//  UIView+XXFontSizeStyle.swift
 //  XXColorTheme
 //
 //  Created by xixi197 on 16/1/21.
@@ -12,38 +12,38 @@ import NSObject_Rx
 
 extension UIView {
     private struct AssociatedKeys {
-        static var FontTextStyle = "xx_fontTextStyle"
+        static var FontSizeStyle = "xx_fontSizeStyle"
     }
 
-    var xx_fontTextStyle: XXFontTextStyle? {
+    var xx_fontSizeStyle: XXFontSizeStyle? {
         get {
-            var fontTextStyle: XXFontTextStyle?
-            let lookup = objc_getAssociatedObject(self, &AssociatedKeys.FontTextStyle) as? String
+            var fontSizeStyle: XXFontSizeStyle?
+            let lookup = objc_getAssociatedObject(self, &AssociatedKeys.FontSizeStyle) as? String
             if let lookup = lookup {
-                fontTextStyle = XXFontTextStyle(rawValue: lookup)
+                fontSizeStyle = XXFontSizeStyle(rawValue: lookup)
             }
 
-            return fontTextStyle
+            return fontSizeStyle
         }
 
         set {
-            let oldValue = self.xx_fontTextStyle
+            let oldValue = self.xx_fontSizeStyle
             if oldValue == newValue { return }
-            objc_setAssociatedObject(self, &AssociatedKeys.FontTextStyle, newValue?.rawValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+            objc_setAssociatedObject(self, &AssociatedKeys.FontSizeStyle, newValue?.rawValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
 
             if oldValue == nil && newValue != nil {
                 XXFontSizeCategory.preferredFontSizeCategory.asObservable().subscribeNext { [weak self] _ -> Void in
-                    self?.xx_updateFont()
+                    self?.xx_updateFontSize()
                     }.addDisposableTo(self.rx_disposeBag)
             }
         }
     }
 
-    private func xx_updateFont() {
-        if let fontTextStyle = xx_fontTextStyle {
+    private func xx_updateFontSize() {
+        if let fontSizeStyle = xx_fontSizeStyle {
             if self.respondsToSelector("getFont") {
                 let font = performSelector("getFont").takeRetainedValue() as! UIFont
-                let fontSize = XXFontSizeCategory.preferredFontSizeCategory.value.fontSize(fontTextStyle)
+                let fontSize = XXFontSizeCategory.preferredFontSizeCategory.value.fontSize(fontSizeStyle)
                 performSelector("setFont:", withObject: font.fontWithSize(fontSize))
             }
         }

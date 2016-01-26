@@ -76,4 +76,8 @@ public extension UIColor {
         UIGraphicsEndImageContext()
         return image
     }
+    
+    class func randomColor() -> UIColor {
+        return UIColor(hex6: UInt32(random() % 16777211))
+    }
 }

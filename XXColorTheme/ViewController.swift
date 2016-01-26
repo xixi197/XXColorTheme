@@ -39,47 +39,47 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.xx_colorViewType = .DefaultBackgroundView
-        changeButton.xx_colorViewType = .DefaultXXTintColorButton
+        view.xx_colorStyle = .Back
+        changeButton.xx_colorStyle = .Light
 
-        defaultColLabel.xx_colorViewType = .DefaultLabel
-        lightColLabel.xx_colorViewType = .DefaultLabel
-        tintColLabel.xx_colorViewType = .DefaultLabel
-        normalRowLabel.xx_colorViewType = .DefaultLabel
-        selectedRowLabel.xx_colorViewType = .DefaultLabel
-        borderRowLabel.xx_colorViewType = .DefaultLabel
-        textRowLabel.xx_colorViewType = .DefaultLabel
+        defaultColLabel.xx_colorStyle = .Light
+        lightColLabel.xx_colorStyle = .Light
+        tintColLabel.xx_colorStyle = .Light
+        normalRowLabel.xx_colorStyle = .Light
+        selectedRowLabel.xx_colorStyle = .Light
+        borderRowLabel.xx_colorStyle = .Light
+        textRowLabel.xx_colorStyle = .Light
 
-        defaultButton.xx_colorViewType = .DefaultXXTintColorButton
-        lightButton.xx_colorViewType = .LightXXTintColorButton
-        tintButton.xx_colorViewType = .TintXXTintColorButton
+        defaultButton.xx_colorStyle = .Light
+        lightButton.xx_colorStyle = .Light3
+        tintButton.xx_colorStyle = .Tint
 
-        defaultSelectedButton.xx_colorViewType = .MarkXXTintColorButton
-        lightSelectedButton.xx_colorViewType = .LightXXTintColorButton
-        tintSelectedButton.xx_colorViewType = .TintXXTintColorButton
+        defaultSelectedButton.xx_colorStyle = .Mark
+        lightSelectedButton.xx_colorStyle = .Light3
+        tintSelectedButton.xx_colorStyle = .Tint
 
-        defaultBorderButton.xx_colorViewType = .DefaultXXTintColorButton
-        lightBorderButton.xx_colorViewType = .LightXXTintColorButton
-        tintBorderButton.xx_colorViewType = .TintXXTintColorButton
+        defaultBorderButton.xx_colorStyle = .Light
+        lightBorderButton.xx_colorStyle = .Light3
+        tintBorderButton.xx_colorStyle = .Tint
 
-        defaultTextButton.xx_colorViewType = .DefaultXXTintColorButton
-        lightTextButton.xx_colorViewType = .LightXXTintColorButton
-        tintTextButton.xx_colorViewType = .TintXXTintColorButton
+        defaultTextButton.xx_colorStyle = .Light
+        lightTextButton.xx_colorStyle = .Light3
+        tintTextButton.xx_colorStyle = .Tint
 
         update()
     }
 
     func update() {
-        changeButton.setTitle(XXColorTheme.currentTheme.value.rawValue, forState: .Normal)
+        changeButton.setTitle(XXColorCategory.preferredColorCategory.value.rawValue, forState: .Normal)
     }
 
     @IBAction func change(button: UIButton) {
-        if (XXColorTheme.currentTheme.value == XXColorTheme.Dark) {
-            XXColorTheme.currentTheme.value = XXColorTheme.Light
-        } else if (XXColorTheme.currentTheme.value == XXColorTheme.Light) {
-            XXColorTheme.currentTheme.value = XXColorTheme.Custom
+        if (XXColorCategory.preferredColorCategory.value == XXColorCategory.Dark) {
+            XXColorCategory.preferredColorCategory.value = XXColorCategory.Light
+        } else if (XXColorCategory.preferredColorCategory.value == XXColorCategory.Light) {
+            XXColorCategory.preferredColorCategory.value = XXColorCategory.Custom
         } else {
-            XXColorTheme.currentTheme.value = XXColorTheme.Dark
+            XXColorCategory.preferredColorCategory.value = XXColorCategory.Dark
         }
         update()
     }
