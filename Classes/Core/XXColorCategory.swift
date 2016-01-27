@@ -27,21 +27,20 @@ enum XXColorStyle: String {
     case Tint
     case Mark
 
+    private static let alphaDictionary : [XXColorStyle : CGFloat] = [
+        .Light2 : 0.64,
+        .Dark2  : 0.64,
+        .Light3 : 0.48,
+        .Dark3  : 0.48,
+        .Light4 : 0.32,
+        .Dark4  : 0.32,
+        .Light5 : 0.16,
+        .Dark5  : 0.16,
+        .Light6 : 0.08,
+        .Dark6  : 0.08]
+
     var alpha: CGFloat {
-        switch self {
-        case .Light2, .Dark2:
-            return 0.64
-        case .Light3, .Dark3:
-            return 0.48
-        case .Light4, .Dark4:
-            return 0.32
-        case .Light5, .Dark5:
-            return 0.16
-        case .Light6, .Dark6:
-            return 0.08
-        default:
-            return 1
-        }
+        return XXColorStyle.alphaDictionary[self] ?? 1
     }
 }
 
@@ -51,7 +50,7 @@ public enum XXColorCategory: String {
     case Custom
 
     static let preferredColorCategory = Variable(XXColorCategory.Dark)
-    static let colorDictionary: [XXColorCategory : [XXColorStyle : UIColor]] = [
+    private static let colorDictionary: [XXColorCategory : [XXColorStyle : UIColor]] = [
         .Dark : [
             .Light: UIColor.whiteColor(),
             .Dark: UIColor.blackColor(),
@@ -65,20 +64,20 @@ public enum XXColorCategory: String {
             .Tint: UIColor(hex6: 0x00B9F2),
             .Mark: UIColor(hex6: 0xF44336)],
         .Custom : [
-            .Light: UIColor.blackColor(),
+            .Light: UIColor.whiteColor(),
             .Dark: UIColor.blackColor(),
             .Back: UIColor(hex6: 0x212121),
             .Tint: UIColor(hex6: 0xF44336),
-            .Mark: UIColor(hex6: 0xF44336)]]
+            .Mark: UIColor(hex6: 0x00B9F2)]]
 
     func color(style: XXColorStyle) -> UIColor {
         switch style {
         case .Light2, .Light3, .Light4, .Light5, .Light6:
-            let color = XXColorCategory.colorDictionary[self]![.Light]!
-            return color.colorWithAlphaComponent(style.alpha)
+            let baseColor = color(.Light)
+            return baseColor.colorWithAlphaComponent(style.alpha)
         case .Dark2, .Dark3, .Dark4, .Dark5, .Dark6:
-            let color = XXColorCategory.colorDictionary[self]![.Dark]!
-            return color.colorWithAlphaComponent(style.alpha)
+            let baseColor = color(.Dark)
+            return baseColor.colorWithAlphaComponent(style.alpha)
         default:
             return XXColorCategory.colorDictionary[self]![style]!
         }

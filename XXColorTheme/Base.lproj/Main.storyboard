@@ -30,21 +30,15 @@
                                     <constraint firstAttribute="width" constant="60" id="H55-FV-XBF"/>
                                     <constraint firstAttribute="height" constant="60" id="paB-nl-4Va"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="xx_normalTemplateImage" value="like"/>
-                                </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zob-Do-oUo" customClass="XXTintColorButton" customModule="XXColorTheme" customModuleProvider="target">
                                 <rect key="frame" x="90" y="110" width="60" height="60"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="xx_normalTemplateImage" value="download"/>
-                                </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NxM-q6-m4x" customClass="XXTintColorButton" customModule="XXColorTheme" customModuleProvider="target">
                                 <rect key="frame" x="165" y="110" width="60" height="60"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="xx_normalTemplateImage" value="download"/>
-                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="selected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vh8-3I-yKv"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ct8-2C-hW1" customClass="XXTintColorButton" customModule="XXColorTheme" customModuleProvider="target">
                                 <rect key="frame" x="15" y="180" width="60" height="60"/>
@@ -52,32 +46,8 @@
                                     <constraint firstAttribute="width" constant="60" id="lJR-Ac-cgV"/>
                                     <constraint firstAttribute="height" constant="60" id="q87-Bz-bn9"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="xx_normalTemplateImage" value="like"/>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="xx_highlightedTemplateImage" value="liked"/>
-                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="selected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BaR-M7-aEm"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b1M-eB-jb1" customClass="XXTintColorButton" customModule="XXColorTheme" customModuleProvider="target">
-                                <rect key="frame" x="90" y="180" width="60" height="60"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="xx_normalTemplateImage" value="download"/>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="xx_highlightedTemplateImage" value="downloaded"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="selected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YE7-7Q-YzS"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="boF-xc-FRj" customClass="XXTintColorButton" customModule="XXColorTheme" customModuleProvider="target">
-                                <rect key="frame" x="165" y="180" width="60" height="60"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="xx_normalTemplateImage" value="download"/>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="xx_highlightedTemplateImage" value="downloaded"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="selected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IZf-6k-9e7"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zdh-un-8NF" customClass="XXTintColorButton" customModule="XXColorTheme" customModuleProvider="target">
@@ -88,18 +58,16 @@
                                 </constraints>
                                 <state key="normal" title="like"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="xx_normalTemplateImage" value="like"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="xx_imageBorderWidth">
                                         <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="xx_isTextDown" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJ2-Ys-opz" customClass="XXTintColorButton" customModule="XXColorTheme" customModuleProvider="target">
-                                <rect key="frame" x="154" y="250" width="82" height="82"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FFy-24-vx5" customClass="XXTintColorButton" customModule="XXColorTheme" customModuleProvider="target">
+                                <rect key="frame" x="79" y="250" width="82" height="82"/>
                                 <state key="normal" title="download"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="xx_normalTemplateImage" value="download"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="xx_imageBorderWidth">
                                         <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
@@ -110,10 +78,6 @@
                                 <rect key="frame" x="28" y="342" width="35" height="34"/>
                                 <state key="normal" title="Text"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gIw-Cc-VKs" customClass="XXTintColorButton" customModule="XXColorTheme" customModuleProvider="target">
-                                <rect key="frame" x="103" y="342" width="35" height="34"/>
-                                <state key="normal" title="Text"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="li3-Ks-Aeh" customClass="XXTintColorButton" customModule="XXColorTheme" customModuleProvider="target">
                                 <rect key="frame" x="178" y="342" width="35" height="34"/>
                                 <state key="normal" title="Text"/>
@@ -121,86 +85,67 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="normal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rWF-iN-bCg">
                                 <rect key="frame" x="240" y="130" width="53" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8t1-Wa-5Bd">
                                 <rect key="frame" x="252" y="349" width="29" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="border" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZK-M6-sej">
                                 <rect key="frame" x="241" y="280" width="51" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="selected" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pea-fT-ptL">
                                 <rect key="frame" x="234" y="199" width="66" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="default" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v1I-1O-uDU">
                                 <rect key="frame" x="18" y="79" width="54" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="light" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zrY-EF-JlI">
                                 <rect key="frame" x="103" y="79" width="34" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tint" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m6Y-Nu-mgz">
                                 <rect key="frame" x="183" y="79" width="25" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FFy-24-vx5" customClass="XXTintColorButton" customModule="XXColorTheme" customModuleProvider="target">
-                                <rect key="frame" x="79" y="250" width="82" height="82"/>
-                                <state key="normal" title="download"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="xx_imageBorderWidth">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="xx_normalTemplateImage" value="download"/>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="xx_isTextDown" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="pea-fT-ptL" firstAttribute="centerX" secondItem="rWF-iN-bCg" secondAttribute="centerX" id="16p-rC-Ngq"/>
                             <constraint firstItem="Bb3-gN-tmw" firstAttribute="top" secondItem="Zdh-un-8NF" secondAttribute="bottom" constant="10" id="1M5-dN-Gw6"/>
-                            <constraint firstItem="b1M-eB-jb1" firstAttribute="centerY" secondItem="ct8-2C-hW1" secondAttribute="centerY" id="1Y1-xh-TF9"/>
                             <constraint firstItem="FFy-24-vx5" firstAttribute="centerY" secondItem="Zdh-un-8NF" secondAttribute="centerY" id="1Yu-c4-PsD"/>
                             <constraint firstItem="Laz-pU-XFJ" firstAttribute="top" secondItem="v1I-1O-uDU" secondAttribute="bottom" constant="10" id="2LW-bC-9ck"/>
                             <constraint firstItem="Zob-Do-oUo" firstAttribute="height" secondItem="Laz-pU-XFJ" secondAttribute="height" id="2UR-SA-JUc"/>
                             <constraint firstItem="li3-Ks-Aeh" firstAttribute="centerX" secondItem="NxM-q6-m4x" secondAttribute="centerX" id="39m-zx-8ac"/>
                             <constraint firstItem="ct8-2C-hW1" firstAttribute="top" secondItem="Laz-pU-XFJ" secondAttribute="bottom" constant="10" id="3hX-RW-kw0"/>
                             <constraint firstItem="Zdh-un-8NF" firstAttribute="centerX" secondItem="Laz-pU-XFJ" secondAttribute="centerX" id="4Bc-hY-A0X"/>
-                            <constraint firstItem="b1M-eB-jb1" firstAttribute="width" secondItem="ct8-2C-hW1" secondAttribute="width" id="5ZF-a9-vVk"/>
                             <constraint firstItem="Laz-pU-XFJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="15" id="6Hd-6P-9hP"/>
-                            <constraint firstItem="eJ2-Ys-opz" firstAttribute="centerY" secondItem="Zdh-un-8NF" secondAttribute="centerY" id="6wd-J3-eRq"/>
-                            <constraint firstItem="gIw-Cc-VKs" firstAttribute="centerY" secondItem="Bb3-gN-tmw" secondAttribute="centerY" id="79b-WU-jF6"/>
-                            <constraint firstItem="eJ2-Ys-opz" firstAttribute="centerX" secondItem="NxM-q6-m4x" secondAttribute="centerX" id="8X6-GG-pT3"/>
                             <constraint firstItem="m6Y-Nu-mgz" firstAttribute="centerX" secondItem="NxM-q6-m4x" secondAttribute="centerX" id="8bt-0C-yXN"/>
-                            <constraint firstItem="boF-xc-FRj" firstAttribute="width" secondItem="ct8-2C-hW1" secondAttribute="width" id="8sa-2Q-XOz"/>
                             <constraint firstItem="pea-fT-ptL" firstAttribute="centerY" secondItem="ct8-2C-hW1" secondAttribute="centerY" id="8vE-Yy-PzD"/>
                             <constraint firstItem="8t1-Wa-5Bd" firstAttribute="centerY" secondItem="Bb3-gN-tmw" secondAttribute="centerY" id="Aur-f0-X04"/>
                             <constraint firstItem="li3-Ks-Aeh" firstAttribute="centerY" secondItem="Bb3-gN-tmw" secondAttribute="centerY" id="C93-c8-mME"/>
                             <constraint firstItem="FFy-24-vx5" firstAttribute="centerX" secondItem="Zob-Do-oUo" secondAttribute="centerX" id="IlW-Zv-aOa"/>
                             <constraint firstItem="Zdh-un-8NF" firstAttribute="top" secondItem="ct8-2C-hW1" secondAttribute="bottom" constant="10" id="K0l-pr-49J"/>
                             <constraint firstItem="Laz-pU-XFJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="90" id="Lon-4v-vlS"/>
-                            <constraint firstItem="gIw-Cc-VKs" firstAttribute="centerX" secondItem="Zob-Do-oUo" secondAttribute="centerX" id="QEN-Sn-r5k"/>
                             <constraint firstItem="m6Y-Nu-mgz" firstAttribute="centerY" secondItem="v1I-1O-uDU" secondAttribute="centerY" id="Qnj-rR-og9"/>
                             <constraint firstItem="Zob-Do-oUo" firstAttribute="width" secondItem="Laz-pU-XFJ" secondAttribute="width" id="UTI-cW-DJC"/>
                             <constraint firstItem="Zob-Do-oUo" firstAttribute="leading" secondItem="Laz-pU-XFJ" secondAttribute="trailing" constant="15" id="Yni-oA-CIW"/>
-                            <constraint firstItem="b1M-eB-jb1" firstAttribute="centerX" secondItem="Zob-Do-oUo" secondAttribute="centerX" id="aMG-qz-6bt"/>
                             <constraint firstItem="eZK-M6-sej" firstAttribute="centerX" secondItem="rWF-iN-bCg" secondAttribute="centerX" id="apq-Ah-cJt"/>
                             <constraint firstItem="NxM-q6-m4x" firstAttribute="centerY" secondItem="Laz-pU-XFJ" secondAttribute="centerY" id="bIK-LI-yTL"/>
                             <constraint firstItem="Bb3-gN-tmw" firstAttribute="centerX" secondItem="Laz-pU-XFJ" secondAttribute="centerX" id="bvG-E3-Rbq"/>
@@ -209,19 +154,13 @@
                             <constraint firstItem="8t1-Wa-5Bd" firstAttribute="centerX" secondItem="rWF-iN-bCg" secondAttribute="centerX" id="cvi-QY-5ds"/>
                             <constraint firstItem="Zob-Do-oUo" firstAttribute="centerY" secondItem="Laz-pU-XFJ" secondAttribute="centerY" id="dvQ-NU-Rjc"/>
                             <constraint firstItem="zrY-EF-JlI" firstAttribute="centerY" secondItem="v1I-1O-uDU" secondAttribute="centerY" id="e9X-ia-EI0"/>
-                            <constraint firstItem="b1M-eB-jb1" firstAttribute="height" secondItem="ct8-2C-hW1" secondAttribute="height" id="eI3-Oe-I9d"/>
                             <constraint firstItem="ozP-6I-M7J" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="gmg-kX-ICv"/>
                             <constraint firstItem="rWF-iN-bCg" firstAttribute="leading" secondItem="NxM-q6-m4x" secondAttribute="trailing" constant="15" id="hRb-oQ-Dj8"/>
                             <constraint firstItem="FFy-24-vx5" firstAttribute="width" secondItem="Zdh-un-8NF" secondAttribute="width" id="hfK-f8-aPq"/>
-                            <constraint firstItem="eJ2-Ys-opz" firstAttribute="width" secondItem="Zdh-un-8NF" secondAttribute="width" id="i8J-Hf-hC1"/>
                             <constraint firstItem="NxM-q6-m4x" firstAttribute="width" secondItem="Laz-pU-XFJ" secondAttribute="width" id="klG-LX-5Q0"/>
-                            <constraint firstItem="boF-xc-FRj" firstAttribute="centerY" secondItem="ct8-2C-hW1" secondAttribute="centerY" id="ouq-KT-1LV"/>
                             <constraint firstItem="v1I-1O-uDU" firstAttribute="centerX" secondItem="Laz-pU-XFJ" secondAttribute="centerX" id="plm-jW-7V2"/>
-                            <constraint firstItem="boF-xc-FRj" firstAttribute="height" secondItem="ct8-2C-hW1" secondAttribute="height" id="psc-tz-bTn"/>
                             <constraint firstItem="zrY-EF-JlI" firstAttribute="centerX" secondItem="Zob-Do-oUo" secondAttribute="centerX" id="pyp-dS-lPX"/>
                             <constraint firstItem="FFy-24-vx5" firstAttribute="height" secondItem="Zdh-un-8NF" secondAttribute="height" id="qet-ZN-vLx"/>
-                            <constraint firstItem="boF-xc-FRj" firstAttribute="centerX" secondItem="NxM-q6-m4x" secondAttribute="centerX" id="sxh-D1-61d"/>
-                            <constraint firstItem="eJ2-Ys-opz" firstAttribute="height" secondItem="Zdh-un-8NF" secondAttribute="height" id="vcr-Wj-uma"/>
                             <constraint firstItem="NxM-q6-m4x" firstAttribute="height" secondItem="Laz-pU-XFJ" secondAttribute="height" id="wgh-ge-GHa"/>
                             <constraint firstItem="rWF-iN-bCg" firstAttribute="centerY" secondItem="Laz-pU-XFJ" secondAttribute="centerY" id="ygS-eE-aDz"/>
                             <constraint firstItem="ct8-2C-hW1" firstAttribute="centerX" secondItem="Laz-pU-XFJ" secondAttribute="centerX" id="zOY-jD-gtJ"/>
@@ -239,15 +178,11 @@
                         <outlet property="lightBorderButton" destination="FFy-24-vx5" id="Dd5-SJ-6Yn"/>
                         <outlet property="lightButton" destination="Zob-Do-oUo" id="KoO-V0-12S"/>
                         <outlet property="lightColLabel" destination="zrY-EF-JlI" id="Mw8-2P-J5A"/>
-                        <outlet property="lightSelectedButton" destination="b1M-eB-jb1" id="u7C-Uq-1Jk"/>
-                        <outlet property="lightTextButton" destination="gIw-Cc-VKs" id="q0N-Vg-gZ1"/>
                         <outlet property="normalRowLabel" destination="rWF-iN-bCg" id="tDd-70-Kvp"/>
                         <outlet property="selectedRowLabel" destination="pea-fT-ptL" id="ThJ-XT-clb"/>
                         <outlet property="textRowLabel" destination="8t1-Wa-5Bd" id="asQ-tK-aNR"/>
-                        <outlet property="tintBorderButton" destination="eJ2-Ys-opz" id="YL1-Gy-KS1"/>
                         <outlet property="tintButton" destination="NxM-q6-m4x" id="1ec-Bh-6Ba"/>
                         <outlet property="tintColLabel" destination="m6Y-Nu-mgz" id="Yox-Qt-ost"/>
-                        <outlet property="tintSelectedButton" destination="boF-xc-FRj" id="W7e-je-as1"/>
                         <outlet property="tintTextButton" destination="li3-Ks-Aeh" id="y6P-Dw-OuQ"/>
                     </connections>
                 </viewController>
@@ -256,10 +191,4 @@
             <point key="canvasLocation" x="276" y="429"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="download" width="24" height="24"/>
-        <image name="downloaded" width="24" height="24"/>
-        <image name="like" width="24" height="24"/>
-        <image name="liked" width="24" height="24"/>
-    </resources>
 </document>

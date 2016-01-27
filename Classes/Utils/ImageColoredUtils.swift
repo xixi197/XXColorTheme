@@ -10,6 +10,7 @@ import UIKit
 
 public extension UIImage {
     /// -> self + color
+    /*
     func tintedImage(color: UIColor?) -> UIImage {
         guard let color = color else { return self }
 
@@ -26,6 +27,7 @@ public extension UIImage {
         UIGraphicsEndImageContext()
         return image
     }
+    */
 
     func expandedImage(size: CGSize) -> UIImage {
         let rect = CGRectMake((size.width - self.size.width) / 2, (size.height - self.size.height) / 2, self.size.width, self.size.height)

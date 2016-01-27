@@ -25,15 +25,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var tintButton: XXTintColorButton!
 
     @IBOutlet weak var defaultSelectedButton: XXTintColorButton!
-    @IBOutlet weak var lightSelectedButton: XXTintColorButton!
-    @IBOutlet weak var tintSelectedButton: XXTintColorButton!
+//    @IBOutlet weak var lightSelectedButton: XXTintColorButton!
+//    @IBOutlet weak var tintSelectedButton: XXTintColorButton!
 
     @IBOutlet weak var defaultBorderButton: XXTintColorButton!
     @IBOutlet weak var lightBorderButton: XXTintColorButton!
-    @IBOutlet weak var tintBorderButton: XXTintColorButton!
+//    @IBOutlet weak var tintBorderButton: XXTintColorButton!
 
     @IBOutlet weak var defaultTextButton: XXTintColorButton!
-    @IBOutlet weak var lightTextButton: XXTintColorButton!
+//    @IBOutlet weak var lightTextButton: XXTintColorButton!
     @IBOutlet weak var tintTextButton: XXTintColorButton!
 
     override func viewDidLoad() {
@@ -50,20 +50,20 @@ class ViewController: UIViewController {
         borderRowLabel.xx_colorStyle = .Light
         textRowLabel.xx_colorStyle = .Light
 
-        defaultButton.xx_colorStyle = .Light
-        lightButton.xx_colorStyle = .Light3
-        tintButton.xx_colorStyle = .Tint
+        defaultButton.styled(.Middle(normalImage: UIImage(named: "download")!))
+        lightButton.styled(.Light(normalImage: UIImage(named: "download")!))
+        tintButton.styled(.MiddleMark(normalImage: UIImage(named: "like")!, highlightedImage: UIImage(named: "liked")!))
 
-        defaultSelectedButton.xx_colorStyle = .Mark
-        lightSelectedButton.xx_colorStyle = .Light3
-        tintSelectedButton.xx_colorStyle = .Tint
+        defaultSelectedButton.styled(.MiddleHighlighted(normalImage: UIImage(named: "download")!, highlightedImage: UIImage(named: "downloaded")!))
+//        lightSelectedButton.xx_colorStyle = .Light3
+//        tintSelectedButton.xx_colorStyle = .Tint
 
-        defaultBorderButton.xx_colorStyle = .Light
+        defaultBorderButton.styled(.LargeHighlighted(normalImage: UIImage(named: "download")!, highlightedImage: UIImage(named: "downloaded")!))
         lightBorderButton.xx_colorStyle = .Light3
-        tintBorderButton.xx_colorStyle = .Tint
+//        tintBorderButton.xx_colorStyle = .Tint
 
         defaultTextButton.xx_colorStyle = .Light
-        lightTextButton.xx_colorStyle = .Light3
+//        lightTextButton.xx_colorStyle = .Light3
         tintTextButton.xx_colorStyle = .Tint
 
         update()

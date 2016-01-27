@@ -32,20 +32,22 @@ extension UIView {
             objc_setAssociatedObject(self, &AssociatedKeys.FontSizeStyle, newValue?.rawValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
 
             if oldValue == nil && newValue != nil {
-                XXFontSizeCategory.preferredFontSizeCategory.asObservable().subscribeNext { [weak self] _ -> Void in
-                    self?.xx_updateFontSize()
+                XXFontSizeCategory.preferredFontSizeCategory.asObservable()
+                    .subscribeNext { [weak self] _ -> Void in
+                        self?.xx_updateFontSize()
                     }.addDisposableTo(self.rx_disposeBag)
             }
         }
     }
 
     private func xx_updateFontSize() {
-        if let fontSizeStyle = xx_fontSizeStyle {
-            if self.respondsToSelector("getFont") {
-                let font = performSelector("getFont").takeRetainedValue() as! UIFont
-                let fontSize = XXFontSizeCategory.preferredFontSizeCategory.value.fontSize(fontSizeStyle)
-                performSelector("setFont:", withObject: font.fontWithSize(fontSize))
-            }
+        guard let style = xx_fontSizeStyle else { return }
+        if self.respondsToSelector("getFont") {
+            let f_fontSize = XXFontSizeCategory.preferredFontSizeCategory.value.fontSize
+            let fontSize = f_fontSize(style)
+
+            let font = performSelector("getFont").takeRetainedValue() as! UIFont
+            performSelector("setFont:", withObject: font.fontWithSize(fontSize))
         }
     }
 }

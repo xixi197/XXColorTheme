@@ -32,16 +32,17 @@ extension UIView {
             objc_setAssociatedObject(self, &AssociatedKeys.ColorStyle, newValue?.rawValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
 
             if oldValue == nil && newValue != nil {
-                XXColorCategory.preferredColorCategory.asObservable().subscribeNext { [weak self] _ -> Void in
-                    self?.xx_updateColor()
+                XXColorCategory.preferredColorCategory.asObservable()
+                    .subscribeNext { [weak self] _ -> Void in
+                        self?.xx_updateColor()
                     }.addDisposableTo(self.rx_disposeBag)
             }
         }
     }
 
     private func xx_updateColor() {
-        if let dictionary = xx_colorDictionary {
-            for (string, color) in dictionary {
+        if let colorSelectors = xx_colorSelectors {
+            for (string, color) in colorSelectors {
                 performSelector(Selector(string), withObject: color)
             }
         }
