@@ -14,6 +14,7 @@ public enum XXViewStyle {
     case DarkBack
     case NavgationSep
     case CellSep
+    case Clear
 }
 
 public extension UIView {
@@ -29,6 +30,8 @@ public extension UIView {
             xx_colorStyle = .Light5
         case .CellSep:
             xx_colorStyle = .Light6
+        case .Clear:
+            xx_colorStyle = .Clear
         }
     }
 }

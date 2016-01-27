@@ -26,6 +26,7 @@ enum XXColorStyle: String {
     case Back
     case Tint
     case Mark
+    case Clear
 
     private static let alphaDictionary : [XXColorStyle : CGFloat] = [
         .Light2 : 0.64,
@@ -78,6 +79,8 @@ public enum XXColorCategory: String {
         case .Dark2, .Dark3, .Dark4, .Dark5, .Dark6:
             let baseColor = color(.Dark)
             return baseColor.colorWithAlphaComponent(style.alpha)
+        case .Clear:
+            return UIColor.clearColor()
         default:
             return XXColorCategory.colorDictionary[self]![style]!
         }
