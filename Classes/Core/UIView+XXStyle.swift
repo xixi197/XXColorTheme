@@ -73,12 +73,18 @@ public extension UILabel {
 }
 
 public enum XXImageViewStyle {
+    case Default
+    case Tint
     case LeftDrawer
 }
 
 public extension UIImageView {
     func styled(style: XXImageViewStyle) {
         switch style {
+        case .Default:
+            xx_colorStyle = .Light
+        case .Tint:
+            xx_colorStyle = .Tint
         case .LeftDrawer:
             xx_colorStyle = .Light4
         }
