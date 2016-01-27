@@ -9,22 +9,25 @@
 import UIKit
 
 public enum XXViewStyle {
+    case Tint
     case Back
     case DarkBack
     case NavgationSep
-    case cellSep
+    case CellSep
 }
 
 public extension UIView {
     func styled(style: XXViewStyle) {
         switch style {
+        case .Tint:
+            xx_colorStyle = .Tint
         case .Back:
             xx_colorStyle = .Back
         case .DarkBack:
             xx_colorStyle = .Dark
         case .NavgationSep:
             xx_colorStyle = .Light5
-        case .cellSep:
+        case .CellSep:
             xx_colorStyle = .Light6
         }
     }
