@@ -13,15 +13,22 @@
 		C416250C1C48CF27007C1C82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C416250A1C48CF27007C1C82 /* Main.storyboard */; };
 		C416250E1C48CF27007C1C82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C416250D1C48CF27007C1C82 /* Assets.xcassets */; };
 		C416251B1C48CF96007C1C82 /* XXColorCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C416251A1C48CF96007C1C82 /* XXColorCategory.swift */; };
-		C46CBFCB1C50C6B500E9B575 /* UIView+XXColorStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46CBFCA1C50C6B500E9B575 /* UIView+XXColorStyle.swift */; };
+		C46CBFCB1C50C6B500E9B575 /* UIView+XXColorStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46CBFCA1C50C6B500E9B575 /* UIView+XXColorStyles.swift */; };
 		C46CBFD01C50D9D200E9B575 /* ImageColoredUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46CBFCD1C50D9D200E9B575 /* ImageColoredUtils.swift */; };
-		C46CBFD11C50D9D200E9B575 /* XXTintColorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46CBFCF1C50D9D200E9B575 /* XXTintColorButton.swift */; };
-		C46CBFD31C50EBB100E9B575 /* UIView+XXColorSelectors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46CBFD21C50EBB100E9B575 /* UIView+XXColorSelectors.swift */; };
 		C46CBFD91C51F29000E9B575 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C46CBFD81C51F29000E9B575 /* Default-568h@2x.png */; };
-		C46CBFDB1C52317600E9B575 /* XXRoundCornerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46CBFDA1C52317600E9B575 /* XXRoundCornerButton.swift */; };
+		C48784751C59FC3F0047CA34 /* UILabel+XXColorStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48784741C59FC3F0047CA34 /* UILabel+XXColorStyle.swift */; };
+		C48784771C5A1B1A0047CA34 /* UIView+XXColorStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48784761C5A1B1A0047CA34 /* UIView+XXColorStyle.swift */; };
+		C48784791C5A1CA40047CA34 /* UISwitch+XXColorStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48784781C5A1CA40047CA34 /* UISwitch+XXColorStyle.swift */; };
+		C487847B1C5A1D260047CA34 /* UIProgressView+XXColorStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C487847A1C5A1D260047CA34 /* UIProgressView+XXColorStyle.swift */; };
+		C487847D1C5A1D300047CA34 /* UISlider+XXColorStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C487847C1C5A1D300047CA34 /* UISlider+XXColorStyle.swift */; };
+		C487847F1C5A1D3A0047CA34 /* UIPageControl+XXColorStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C487847E1C5A1D3A0047CA34 /* UIPageControl+XXColorStyle.swift */; };
+		C48784811C5A206B0047CA34 /* XXTintColorButton+XXColorStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48784801C5A206B0047CA34 /* XXTintColorButton+XXColorStyle.swift */; };
+		C48784831C5A21620047CA34 /* XXRoundCornerButton+XXColorStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48784821C5A21620047CA34 /* XXRoundCornerButton+XXColorStyle.swift */; };
+		C487848B1C5A28310047CA34 /* UIView+XXStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48784871C5A28310047CA34 /* UIView+XXStyle.swift */; };
+		C487848C1C5A28310047CA34 /* XXRoundCornerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48784891C5A28310047CA34 /* XXRoundCornerButton.swift */; };
+		C487848D1C5A28310047CA34 /* XXTintColorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C487848A1C5A28310047CA34 /* XXTintColorButton.swift */; };
 		C4BEF1531C56123000B3989C /* XXFontSizeCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BEF1521C56123000B3989C /* XXFontSizeCategory.swift */; };
-		C4BEF1551C56201D00B3989C /* UIView+XXFontSizeStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BEF1541C56201D00B3989C /* UIView+XXFontSizeStyle.swift */; };
-		C4BEF1771C58976700B3989C /* UIView+XXStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BEF1761C58976600B3989C /* UIView+XXStyle.swift */; };
+		C4BEF1551C56201D00B3989C /* UIView+XXFontSizeStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BEF1541C56201D00B3989C /* UIView+XXFontSizeStyles.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,15 +41,22 @@
 		C416250D1C48CF27007C1C82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C41625121C48CF27007C1C82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C416251A1C48CF96007C1C82 /* XXColorCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XXColorCategory.swift; sourceTree = "<group>"; };
-		C46CBFCA1C50C6B500E9B575 /* UIView+XXColorStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+XXColorStyle.swift"; sourceTree = "<group>"; };
+		C46CBFCA1C50C6B500E9B575 /* UIView+XXColorStyles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+XXColorStyles.swift"; sourceTree = "<group>"; };
 		C46CBFCD1C50D9D200E9B575 /* ImageColoredUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageColoredUtils.swift; sourceTree = "<group>"; };
-		C46CBFCF1C50D9D200E9B575 /* XXTintColorButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XXTintColorButton.swift; sourceTree = "<group>"; };
-		C46CBFD21C50EBB100E9B575 /* UIView+XXColorSelectors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+XXColorSelectors.swift"; sourceTree = "<group>"; };
 		C46CBFD81C51F29000E9B575 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		C46CBFDA1C52317600E9B575 /* XXRoundCornerButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XXRoundCornerButton.swift; sourceTree = "<group>"; };
+		C48784741C59FC3F0047CA34 /* UILabel+XXColorStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+XXColorStyle.swift"; sourceTree = "<group>"; };
+		C48784761C5A1B1A0047CA34 /* UIView+XXColorStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+XXColorStyle.swift"; sourceTree = "<group>"; };
+		C48784781C5A1CA40047CA34 /* UISwitch+XXColorStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISwitch+XXColorStyle.swift"; sourceTree = "<group>"; };
+		C487847A1C5A1D260047CA34 /* UIProgressView+XXColorStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIProgressView+XXColorStyle.swift"; sourceTree = "<group>"; };
+		C487847C1C5A1D300047CA34 /* UISlider+XXColorStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISlider+XXColorStyle.swift"; sourceTree = "<group>"; };
+		C487847E1C5A1D3A0047CA34 /* UIPageControl+XXColorStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIPageControl+XXColorStyle.swift"; sourceTree = "<group>"; };
+		C48784801C5A206B0047CA34 /* XXTintColorButton+XXColorStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XXTintColorButton+XXColorStyle.swift"; sourceTree = "<group>"; };
+		C48784821C5A21620047CA34 /* XXRoundCornerButton+XXColorStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XXRoundCornerButton+XXColorStyle.swift"; sourceTree = "<group>"; };
+		C48784871C5A28310047CA34 /* UIView+XXStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+XXStyle.swift"; sourceTree = "<group>"; };
+		C48784891C5A28310047CA34 /* XXRoundCornerButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XXRoundCornerButton.swift; sourceTree = "<group>"; };
+		C487848A1C5A28310047CA34 /* XXTintColorButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XXTintColorButton.swift; sourceTree = "<group>"; };
 		C4BEF1521C56123000B3989C /* XXFontSizeCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XXFontSizeCategory.swift; sourceTree = "<group>"; };
-		C4BEF1541C56201D00B3989C /* UIView+XXFontSizeStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+XXFontSizeStyle.swift"; sourceTree = "<group>"; };
-		C4BEF1761C58976600B3989C /* UIView+XXStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+XXStyle.swift"; sourceTree = "<group>"; };
+		C4BEF1541C56201D00B3989C /* UIView+XXFontSizeStyles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+XXFontSizeStyles.swift"; sourceTree = "<group>"; };
 		EFFEC2889B7E52BE5AF2564C /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -111,8 +125,10 @@
 			isa = PBXGroup;
 			children = (
 				C46CBFCC1C50D9D200E9B575 /* Utils */,
-				C46CBFCE1C50D9D200E9B575 /* XXView */,
+				C48784881C5A28310047CA34 /* View */,
+				C48784861C5A28310047CA34 /* Style */,
 				C41625191C48CF7D007C1C82 /* Core */,
+				C48784731C59FC020047CA34 /* UIKit */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -122,10 +138,8 @@
 			children = (
 				C416251A1C48CF96007C1C82 /* XXColorCategory.swift */,
 				C4BEF1521C56123000B3989C /* XXFontSizeCategory.swift */,
-				C46CBFCA1C50C6B500E9B575 /* UIView+XXColorStyle.swift */,
-				C4BEF1541C56201D00B3989C /* UIView+XXFontSizeStyle.swift */,
-				C46CBFD21C50EBB100E9B575 /* UIView+XXColorSelectors.swift */,
-				C4BEF1761C58976600B3989C /* UIView+XXStyle.swift */,
+				C46CBFCA1C50C6B500E9B575 /* UIView+XXColorStyles.swift */,
+				C4BEF1541C56201D00B3989C /* UIView+XXFontSizeStyles.swift */,
 			);
 			name = Core;
 			path = Classes/Core;
@@ -140,14 +154,39 @@
 			path = Classes/Utils;
 			sourceTree = SOURCE_ROOT;
 		};
-		C46CBFCE1C50D9D200E9B575 /* XXView */ = {
+		C48784731C59FC020047CA34 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				C46CBFCF1C50D9D200E9B575 /* XXTintColorButton.swift */,
-				C46CBFDA1C52317600E9B575 /* XXRoundCornerButton.swift */,
+				C48784761C5A1B1A0047CA34 /* UIView+XXColorStyle.swift */,
+				C48784741C59FC3F0047CA34 /* UILabel+XXColorStyle.swift */,
+				C48784781C5A1CA40047CA34 /* UISwitch+XXColorStyle.swift */,
+				C487847A1C5A1D260047CA34 /* UIProgressView+XXColorStyle.swift */,
+				C487847C1C5A1D300047CA34 /* UISlider+XXColorStyle.swift */,
+				C487847E1C5A1D3A0047CA34 /* UIPageControl+XXColorStyle.swift */,
+				C48784801C5A206B0047CA34 /* XXTintColorButton+XXColorStyle.swift */,
+				C48784821C5A21620047CA34 /* XXRoundCornerButton+XXColorStyle.swift */,
 			);
-			name = XXView;
-			path = Classes/XXView;
+			name = UIKit;
+			path = Classes/UIKit;
+			sourceTree = SOURCE_ROOT;
+		};
+		C48784861C5A28310047CA34 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				C48784871C5A28310047CA34 /* UIView+XXStyle.swift */,
+			);
+			name = Style;
+			path = Classes/Style;
+			sourceTree = SOURCE_ROOT;
+		};
+		C48784881C5A28310047CA34 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C48784891C5A28310047CA34 /* XXRoundCornerButton.swift */,
+				C487848A1C5A28310047CA34 /* XXTintColorButton.swift */,
+			);
+			name = View;
+			path = Classes/View;
 			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
@@ -272,17 +311,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C46CBFCB1C50C6B500E9B575 /* UIView+XXColorStyle.swift in Sources */,
-				C46CBFDB1C52317600E9B575 /* XXRoundCornerButton.swift in Sources */,
+				C48784811C5A206B0047CA34 /* XXTintColorButton+XXColorStyle.swift in Sources */,
+				C46CBFCB1C50C6B500E9B575 /* UIView+XXColorStyles.swift in Sources */,
+				C487847D1C5A1D300047CA34 /* UISlider+XXColorStyle.swift in Sources */,
 				C416251B1C48CF96007C1C82 /* XXColorCategory.swift in Sources */,
+				C48784791C5A1CA40047CA34 /* UISwitch+XXColorStyle.swift in Sources */,
 				C4BEF1531C56123000B3989C /* XXFontSizeCategory.swift in Sources */,
-				C46CBFD31C50EBB100E9B575 /* UIView+XXColorSelectors.swift in Sources */,
-				C46CBFD11C50D9D200E9B575 /* XXTintColorButton.swift in Sources */,
-				C4BEF1551C56201D00B3989C /* UIView+XXFontSizeStyle.swift in Sources */,
-				C4BEF1771C58976700B3989C /* UIView+XXStyle.swift in Sources */,
+				C48784831C5A21620047CA34 /* XXRoundCornerButton+XXColorStyle.swift in Sources */,
+				C48784771C5A1B1A0047CA34 /* UIView+XXColorStyle.swift in Sources */,
+				C487847F1C5A1D3A0047CA34 /* UIPageControl+XXColorStyle.swift in Sources */,
+				C487848D1C5A28310047CA34 /* XXTintColorButton.swift in Sources */,
+				C48784751C59FC3F0047CA34 /* UILabel+XXColorStyle.swift in Sources */,
+				C4BEF1551C56201D00B3989C /* UIView+XXFontSizeStyles.swift in Sources */,
+				C487848C1C5A28310047CA34 /* XXRoundCornerButton.swift in Sources */,
+				C487848B1C5A28310047CA34 /* UIView+XXStyle.swift in Sources */,
 				C46CBFD01C50D9D200E9B575 /* ImageColoredUtils.swift in Sources */,
 				C41625091C48CF27007C1C82 /* ViewController.swift in Sources */,
 				C41625071C48CF27007C1C82 /* AppDelegate.swift in Sources */,
+				C487847B1C5A1D260047CA34 /* UIProgressView+XXColorStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

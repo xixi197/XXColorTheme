@@ -1,6 +1,6 @@
 //
 //  UIView+XXColorCategory.swift
-//  XXcolorCategory
+//  XXColorTheme
 //
 //  Created by xixi197 on 16/1/21.
 //  Copyright © 2016年 xixi197. All rights reserved.
@@ -21,17 +21,17 @@ public extension UIView {
     func styled(style: XXViewStyle) {
         switch style {
         case .Tint:
-            xx_colorStyle = .Tint
+            xx_backgroundColorStyle = .Tint
         case .Back:
-            xx_colorStyle = .Back
+            xx_backgroundColorStyle = .Back
         case .DarkBack:
-            xx_colorStyle = .Dark
+            xx_backgroundColorStyle = .Dark
         case .NavgationSep:
-            xx_colorStyle = .Light5
+            xx_backgroundColorStyle = .Light5
         case .CellSep:
-            xx_colorStyle = .Light6
+            xx_backgroundColorStyle = .Light6
         case .Clear:
-            xx_colorStyle = .Clear
+            xx_backgroundColorStyle = .Clear
         }
     }
 }
@@ -51,28 +51,28 @@ public extension UILabel {
     func styled(style: XXLabelStyle) {
         switch style {
         case .NavgationTitle:
-            xx_colorStyle = .Light
+            xx_textColorStyle = .Light
             xx_fontSizeStyle = .Title3
         case .CellTitle:
-            xx_colorStyle = .Light
+            xx_textColorStyle = .Light
             xx_fontSizeStyle = .Headline
         case .CellSubTitle(let ishighlighted):
-            xx_colorStyle = ishighlighted ? .Light : .Light4
+            xx_textColorStyle = ishighlighted ? .Light : .Light4
             xx_fontSizeStyle = .Subheadline
         case .CellTitle2:
-            xx_colorStyle = .Light2
+            xx_textColorStyle = .Light2
             xx_fontSizeStyle = .Headline
         case .PlayerEnTitle:
-            xx_colorStyle = .Light
+            xx_textColorStyle = .Light
             xx_fontSizeStyle = .Title2
         case .PlayerCnTitle:
-            xx_colorStyle = .Light
+            xx_textColorStyle = .Light
             xx_fontSizeStyle = .Caption2
         case .PlayerCellTitle:
-            xx_colorStyle = .Light
+            xx_textColorStyle = .Light
             xx_fontSizeStyle = .Title2
         case .PlayerCellSubTitle:
-            xx_colorStyle = .Light
+            xx_textColorStyle = .Light
             xx_fontSizeStyle = .Headline
         }
     }
@@ -88,11 +88,11 @@ public extension UIImageView {
     func styled(style: XXImageViewStyle) {
         switch style {
         case .Default:
-            xx_colorStyle = .Light
+            xx_tintColorStyle = .Light
         case .Tint:
-            xx_colorStyle = .Tint
+            xx_tintColorStyle = .Tint
         case .LeftDrawer:
-            xx_colorStyle = .Light4
+            xx_tintColorStyle = .Light4
         }
     }
 }
@@ -103,7 +103,7 @@ public enum XXTintColorButtonStyle {
     case MiddleHighlighted(normalImage: UIImage, highlightedImage: UIImage)
     case MiddleMark(normalImage: UIImage, highlightedImage: UIImage)
     /// 仅图 normal: Light色 highlighted:Light色 size:64 48
-    case Light(normalImage: UIImage)
+    case Light(normalImage: UIImage?)
     /// 图文字
     case Large(normalImage: UIImage)
     case LargeHighlighted(normalImage: UIImage, highlightedImage: UIImage)
@@ -117,18 +117,22 @@ public extension XXTintColorButton {
         switch style {
         case .Middle(let normalImage):
             xx_normalTemplateImage = normalImage
-            xx_colorStyle = .Light
+            xx_normalTintColorStyle = .Light
+            xx_highlightedTintColorStyle = .Tint
         case .MiddleHighlighted(let normalImage, let highlightedImage):
             xx_normalTemplateImage = normalImage
             xx_highlightedTemplateImage = highlightedImage
-            xx_colorStyle = .Light
+            xx_normalTintColorStyle = .Light
+            xx_highlightedTintColorStyle = .Tint
         case .MiddleMark(let normalImage, let highlightedImage):
             xx_normalTemplateImage = normalImage
             xx_highlightedTemplateImage = highlightedImage
-            xx_colorStyle = .Mark
+            xx_normalTintColorStyle = .Light
+            xx_selectedTintColorStyle = .Mark
         case .Light(let normalImage):
             xx_normalTemplateImage = normalImage
-            xx_colorStyle = .Light3
+            xx_normalTintColorStyle = .Light3
+            xx_highlightedTintColorStyle = .Light
         case .Large(let normalImage):
             xx_imageBorderWidth = 1
             xx_isTextDown = true
@@ -147,8 +151,8 @@ public extension XXTintColorButton {
         }
     }
 
-    func navgationRightTextButton() {
-        xx_colorStyle = .Tint
-        titleLabel?.font = titleLabel?.font.fontWithSize(XXFontSizeStyle.Headline.fontSize)
-    }
+//    func navgationRightTextButton() {
+//        xx_colorStyle = .Tint
+//        titleLabel?.font = titleLabel?.font.fontWithSize(XXFontSizeStyle.Headline.fontSize)
+//    }
 }

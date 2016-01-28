@@ -39,16 +39,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.xx_colorStyle = .Back
-        changeButton.xx_colorStyle = .Light
+        view.styled(.Back)
+//        changeButton.xx_colorStyle = .Light
 
-        defaultColLabel.xx_colorStyle = .Light
-        lightColLabel.xx_colorStyle = .Light
-        tintColLabel.xx_colorStyle = .Light
-        normalRowLabel.xx_colorStyle = .Light
-        selectedRowLabel.xx_colorStyle = .Light
-        borderRowLabel.xx_colorStyle = .Light
-        textRowLabel.xx_colorStyle = .Light
+//        defaultColLabel.xx_colorStyle = .Light
+//        lightColLabel.xx_colorStyle = .Light
+//        tintColLabel.xx_colorStyle = .Light
+//        normalRowLabel.xx_colorStyle = .Light
+//        selectedRowLabel.xx_colorStyle = .Light
+//        borderRowLabel.xx_colorStyle = .Light
+//        textRowLabel.xx_colorStyle = .Light
 
         defaultButton.styled(.Middle(normalImage: UIImage(named: "download")!))
         lightButton.styled(.Light(normalImage: UIImage(named: "download")!))
@@ -59,12 +59,12 @@ class ViewController: UIViewController {
 //        tintSelectedButton.xx_colorStyle = .Tint
 
         defaultBorderButton.styled(.LargeHighlighted(normalImage: UIImage(named: "download")!, highlightedImage: UIImage(named: "downloaded")!))
-        lightBorderButton.xx_colorStyle = .Light3
+//        lightBorderButton.xx_colorStyle = .Light3
 //        tintBorderButton.xx_colorStyle = .Tint
 
-        defaultTextButton.xx_colorStyle = .Light
+        defaultTextButton.styled(.Light(normalImage:nil))
 //        lightTextButton.xx_colorStyle = .Light3
-        tintTextButton.xx_colorStyle = .Tint
+//        tintTextButton.xx_colorStyle = .Tint
 
         update()
     }

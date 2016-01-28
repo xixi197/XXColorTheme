@@ -10,7 +10,8 @@
     "Classes",
     "Classes/Core",
     "Classes/Utils",
-    "Classes/XXView"
+    "Classes/View",
+    "Classes/Style",
   ],
   "requires_arc": true,
   "platforms": {
