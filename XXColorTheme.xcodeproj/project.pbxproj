@@ -27,6 +27,8 @@
 		C487848B1C5A28310047CA34 /* UIView+XXStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48784871C5A28310047CA34 /* UIView+XXStyle.swift */; };
 		C487848C1C5A28310047CA34 /* XXRoundCornerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48784891C5A28310047CA34 /* XXRoundCornerButton.swift */; };
 		C487848D1C5A28310047CA34 /* XXTintColorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C487848A1C5A28310047CA34 /* XXTintColorButton.swift */; };
+		C487848F1C5A29960047CA34 /* UILabel+XXStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C487848E1C5A29960047CA34 /* UILabel+XXStyle.swift */; };
+		C48784911C5A29E30047CA34 /* XXTintColorButton+XXStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48784901C5A29E30047CA34 /* XXTintColorButton+XXStyle.swift */; };
 		C4BEF1531C56123000B3989C /* XXFontSizeCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BEF1521C56123000B3989C /* XXFontSizeCategory.swift */; };
 		C4BEF1551C56201D00B3989C /* UIView+XXFontSizeStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BEF1541C56201D00B3989C /* UIView+XXFontSizeStyles.swift */; };
 /* End PBXBuildFile section */
@@ -55,6 +57,8 @@
 		C48784871C5A28310047CA34 /* UIView+XXStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+XXStyle.swift"; sourceTree = "<group>"; };
 		C48784891C5A28310047CA34 /* XXRoundCornerButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XXRoundCornerButton.swift; sourceTree = "<group>"; };
 		C487848A1C5A28310047CA34 /* XXTintColorButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XXTintColorButton.swift; sourceTree = "<group>"; };
+		C487848E1C5A29960047CA34 /* UILabel+XXStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+XXStyle.swift"; sourceTree = "<group>"; };
+		C48784901C5A29E30047CA34 /* XXTintColorButton+XXStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XXTintColorButton+XXStyle.swift"; sourceTree = "<group>"; };
 		C4BEF1521C56123000B3989C /* XXFontSizeCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XXFontSizeCategory.swift; sourceTree = "<group>"; };
 		C4BEF1541C56201D00B3989C /* UIView+XXFontSizeStyles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+XXFontSizeStyles.swift"; sourceTree = "<group>"; };
 		EFFEC2889B7E52BE5AF2564C /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -174,6 +178,8 @@
 			isa = PBXGroup;
 			children = (
 				C48784871C5A28310047CA34 /* UIView+XXStyle.swift */,
+				C487848E1C5A29960047CA34 /* UILabel+XXStyle.swift */,
+				C48784901C5A29E30047CA34 /* XXTintColorButton+XXStyle.swift */,
 			);
 			name = Style;
 			path = Classes/Style;
@@ -315,12 +321,14 @@
 				C46CBFCB1C50C6B500E9B575 /* UIView+XXColorStyles.swift in Sources */,
 				C487847D1C5A1D300047CA34 /* UISlider+XXColorStyle.swift in Sources */,
 				C416251B1C48CF96007C1C82 /* XXColorCategory.swift in Sources */,
+				C48784911C5A29E30047CA34 /* XXTintColorButton+XXStyle.swift in Sources */,
 				C48784791C5A1CA40047CA34 /* UISwitch+XXColorStyle.swift in Sources */,
 				C4BEF1531C56123000B3989C /* XXFontSizeCategory.swift in Sources */,
 				C48784831C5A21620047CA34 /* XXRoundCornerButton+XXColorStyle.swift in Sources */,
 				C48784771C5A1B1A0047CA34 /* UIView+XXColorStyle.swift in Sources */,
 				C487847F1C5A1D3A0047CA34 /* UIPageControl+XXColorStyle.swift in Sources */,
 				C487848D1C5A28310047CA34 /* XXTintColorButton.swift in Sources */,
+				C487848F1C5A29960047CA34 /* UILabel+XXStyle.swift in Sources */,
 				C48784751C59FC3F0047CA34 /* UILabel+XXColorStyle.swift in Sources */,
 				C4BEF1551C56201D00B3989C /* UIView+XXFontSizeStyles.swift in Sources */,
 				C487848C1C5A28310047CA34 /* XXRoundCornerButton.swift in Sources */,
