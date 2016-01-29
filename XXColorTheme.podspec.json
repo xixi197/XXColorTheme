@@ -12,6 +12,7 @@
     "Classes/Utils",
     "Classes/View",
     "Classes/Style",
+    "Classes/UIKit"
   ],
   "requires_arc": true,
   "platforms": {

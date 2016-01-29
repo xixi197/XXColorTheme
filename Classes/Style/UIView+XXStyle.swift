@@ -14,6 +14,7 @@ public enum XXViewStyle {
     case DarkBack
     case ClearBack
 
+    case NavigationMaskBack
     case NavigationSep
 
     case CellSep
@@ -31,6 +32,8 @@ public extension UIView {
         case .ClearBack:
             xx_backgroundColorStyle = .Clear
 
+        case .NavigationMaskBack:
+            xx_backgroundColorStyle = .Light4
         case .NavigationSep:
             xx_backgroundColorStyle = .Light5
 
