@@ -17,10 +17,16 @@ public enum XXViewStyle {
     case NavigationMaskBack
     case NavigationSep
 
+    case CellBack(ishighlighted: Bool)
     case CellSep
 }
 
 public extension UIView {
+    convenience init(style: XXViewStyle) {
+        self.init(frame: CGRectZero)
+        styled(style)
+    }
+
     func styled(style: XXViewStyle) {
         switch style {
         case .Back:
@@ -37,6 +43,8 @@ public extension UIView {
         case .NavigationSep:
             xx_backgroundColorStyle = .Light5
 
+        case .CellBack(let ishighlighted):
+            xx_backgroundColorStyle = ishighlighted ? .Tint : .Clear
         case .CellSep:
             xx_backgroundColorStyle = .Light6
         }

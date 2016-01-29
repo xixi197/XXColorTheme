@@ -28,6 +28,11 @@ public enum XXTintColorButtonStyle {
 }
 
 public extension XXTintColorButton {
+    convenience init(style: XXTintColorButtonStyle) {
+        self.init(frame: CGRectZero)
+        styled(style)
+    }
+
     func styled(style: XXTintColorButtonStyle) {
         switch style {
         case .Middle(let normalImage):
