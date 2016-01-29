@@ -29,6 +29,36 @@ public extension UIImage {
     }
     */
 
+    func scaledImage(size: CGSize) -> UIImage {
+        let rect = CGRectMake(0, 0, size.width, size.height)
+
+        UIGraphicsBeginImageContextWithOptions(size, false, 0)
+
+        drawInRect(rect)
+
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return image
+    }
+
+    var ellipseCropImage: UIImage {
+        let rect = CGRectMake(0, 0, size.width, size.height)
+
+        UIGraphicsBeginImageContextWithOptions(size, false, 0)
+
+        // Circle crop
+        let context = UIGraphicsGetCurrentContext()
+        let path = CGPathCreateWithEllipseInRect(rect, nil)
+        CGContextAddPath(context, path)
+        CGContextClip(context)
+
+        drawInRect(rect)
+
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return image
+    }
+
     func expandedImage(size: CGSize) -> UIImage {
         let rect = CGRectMake((size.width - self.size.width) / 2, (size.height - self.size.height) / 2, self.size.width, self.size.height)
 

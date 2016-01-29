@@ -10,13 +10,13 @@ import UIKit
 
 public enum XXTintColorButtonStyle {
     /// 仅图 normal: Light色 highlighted:Tint色 size:64
-    case Middle(normalImage: UIImage)
+    case MiddleNormal(normalImage: UIImage)
     case MiddleHighlighted(normalImage: UIImage, highlightedImage: UIImage)
     case MiddleMark(normalImage: UIImage, highlightedImage: UIImage)
     /// 仅图 normal: Light色 highlighted:Light色 size:64 48
-    case Light(normalImage: UIImage)
+    case LightNormal(normalImage: UIImage)
     /// 图文字
-    case Large(normalImage: UIImage)
+    case LargeNormal(normalImage: UIImage)
     case LargeHighlighted(normalImage: UIImage, highlightedImage: UIImage)
     case LargeMark(normalImage: UIImage, highlightedImage: UIImage)
     /// 原图 文字Light
