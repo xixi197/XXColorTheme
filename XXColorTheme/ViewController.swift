@@ -62,7 +62,7 @@ class ViewController: UIViewController {
 //        lightBorderButton.xx_colorStyle = .Light3
 //        tintBorderButton.xx_colorStyle = .Tint
 
-        defaultTextButton.styled(.Light(normalImage:nil))
+        defaultTextButton.styled(.TextLight)
 //        lightTextButton.xx_colorStyle = .Light3
 //        tintTextButton.xx_colorStyle = .Tint
 

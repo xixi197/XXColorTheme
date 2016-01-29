@@ -9,35 +9,39 @@
 import UIKit
 
 public enum XXViewStyle {
-    case Tint
     case Back
+    case TintBack
     case DarkBack
-    case NavgationSep
+    case ClearBack
+
+    case NavigationSep
+
     case CellSep
-    case Clear
 }
 
 public extension UIView {
     func styled(style: XXViewStyle) {
         switch style {
-        case .Tint:
-            xx_backgroundColorStyle = .Tint
         case .Back:
             xx_backgroundColorStyle = .Back
+        case .TintBack:
+            xx_backgroundColorStyle = .Tint
         case .DarkBack:
             xx_backgroundColorStyle = .Dark
-        case .NavgationSep:
+        case .ClearBack:
+            xx_backgroundColorStyle = .Clear
+
+        case .NavigationSep:
             xx_backgroundColorStyle = .Light5
+
         case .CellSep:
             xx_backgroundColorStyle = .Light6
-        case .Clear:
-            xx_backgroundColorStyle = .Clear
         }
     }
 }
 
 public enum XXImageViewStyle {
-    case Default
+    case Light
     case Tint
     case LeftDrawer
 }
@@ -45,7 +49,7 @@ public enum XXImageViewStyle {
 public extension UIImageView {
     func styled(style: XXImageViewStyle) {
         switch style {
-        case .Default:
+        case .Light:
             xx_tintColorStyle = .Light
         case .Tint:
             xx_tintColorStyle = .Tint

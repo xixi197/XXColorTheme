@@ -30,7 +30,7 @@ enum XXFontSizeStyle: String {
         .Body           : 17,
         .Callout        : 16,
         .Footnote       : 13,
-        .Caption1       : 12,
+        .Caption1       : 14,
         .Caption2       : 10]
 
     var fontSize: CGFloat {

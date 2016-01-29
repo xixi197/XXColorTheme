@@ -10,30 +10,63 @@ import UIKit
 
 public enum XXLabelStyle {
     case NavgationTitle
+
+    case SectionTitle
+
     case CellTitle
     case CellSubTitle(ishighlighted: Bool)
-    case CellTitle2
+
+    case SettingCellRightTitle//logout
+
+    case PlaylistCellTitle
+    case PlaylistCellSubTitle
+
     case PlayerEnTitle
     case PlayerCnTitle
     case PlayerCellTitle
     case PlayerCellSubTitle
+
+    //fix
+    case Notice// 提示文字，字体14，32%白，居中
+    case SmallNotice// 最小的文字，字体12，32%白
 }
 
 public extension UILabel {
+    convenience init(style: XXLabelStyle) {
+        self.init(frame: CGRectZero)
+        styled(style)
+    }
+
     func styled(style: XXLabelStyle) {
         switch style {
         case .NavgationTitle:
             xx_textColorStyle = .Light
             xx_fontSizeStyle = .Title3
+            textAlignment = .Center
+
+        case .SectionTitle:
+            xx_textColorStyle = .Light2
+            xx_fontSizeStyle = .Caption1
         case .CellTitle:
             xx_textColorStyle = .Light
             xx_fontSizeStyle = .Headline
         case .CellSubTitle(let ishighlighted):
             xx_textColorStyle = ishighlighted ? .Light : .Light4
             xx_fontSizeStyle = .Subheadline
-        case .CellTitle2:
+
+        case .SettingCellRightTitle:
             xx_textColorStyle = .Light2
             xx_fontSizeStyle = .Headline
+
+        case .PlaylistCellTitle:
+            xx_textColorStyle = .Light
+            xx_fontSizeStyle = .Title3
+            xx_backgroundColorStyle = .Dark
+        case .PlaylistCellSubTitle:
+            xx_textColorStyle = .Light2
+            xx_fontSizeStyle = .Caption2
+            xx_backgroundColorStyle = .Dark
+
         case .PlayerEnTitle:
             xx_textColorStyle = .Light
             xx_fontSizeStyle = .Title2
@@ -46,6 +79,13 @@ public extension UILabel {
         case .PlayerCellSubTitle:
             xx_textColorStyle = .Light
             xx_fontSizeStyle = .Headline
+
+        case .Notice:
+            xx_textColorStyle = .Light4
+            xx_fontSizeStyle = .Caption1
+        case .SmallNotice:
+            xx_textColorStyle = .Light4
+            xx_fontSizeStyle = .Subheadline
         }
     }
 }

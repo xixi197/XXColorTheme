@@ -14,13 +14,17 @@ public enum XXTintColorButtonStyle {
     case MiddleHighlighted(normalImage: UIImage, highlightedImage: UIImage)
     case MiddleMark(normalImage: UIImage, highlightedImage: UIImage)
     /// 仅图 normal: Light色 highlighted:Light色 size:64 48
-    case Light(normalImage: UIImage?)
+    case Light(normalImage: UIImage)
     /// 图文字
     case Large(normalImage: UIImage)
     case LargeHighlighted(normalImage: UIImage, highlightedImage: UIImage)
     case LargeMark(normalImage: UIImage, highlightedImage: UIImage)
     /// 原图 文字Light
     case LargeColored(normalImage: UIImage)
+
+    /// 纯文字
+    case TextLight
+    case TextTint
 }
 
 public extension XXTintColorButton {
@@ -59,11 +63,13 @@ public extension XXTintColorButton {
         case .LargeColored(let normalImage):
             xx_isTextDown = true
             setImage(normalImage, forState: .Normal)
+        case .TextLight:
+            xx_normalTintColorStyle = .Light
+            xx_highlightedTintColorStyle = .Tint
+            titleLabel?.xx_fontSizeStyle = .Headline
+        case .TextTint:
+            xx_normalTintColorStyle = .Tint
+            titleLabel?.xx_fontSizeStyle = .Headline
         }
     }
-
-//    func navgationRightTextButton() {
-//        xx_colorStyle = .Tint
-//        titleLabel?.font = titleLabel?.font.fontWithSize(XXFontSizeStyle.Headline.fontSize)
-//    }
 }
