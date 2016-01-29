@@ -20,7 +20,7 @@ public enum XXTintColorButtonStyle {
     case LargeHighlighted(normalImage: UIImage, highlightedImage: UIImage)
     case LargeMark(normalImage: UIImage, highlightedImage: UIImage)
     /// 原图 文字Light
-    case LargeColored(normalImage: UIImage)
+    case LargeColoredNormal(normalImage: UIImage)
 
     /// 纯文字
     case TextLight
@@ -35,7 +35,7 @@ public extension XXTintColorButton {
 
     func styled(style: XXTintColorButtonStyle) {
         switch style {
-        case .Middle(let normalImage):
+        case .MiddleNormal(let normalImage):
             xx_normalTemplateImage = normalImage
             xx_normalTintColorStyle = .Light
             xx_highlightedTintColorStyle = .Tint
@@ -49,14 +49,14 @@ public extension XXTintColorButton {
             xx_highlightedTemplateImage = highlightedImage
             xx_normalTintColorStyle = .Light
             xx_selectedTintColorStyle = .Mark
-        case .Light(let normalImage):
+        case .LightNormal(let normalImage):
             xx_normalTemplateImage = normalImage
             xx_normalTintColorStyle = .Light3
             xx_highlightedTintColorStyle = .Light
-        case .Large(let normalImage):
+        case .LargeNormal(let normalImage):
             xx_imageBorderWidth = 1
             xx_isTextDown = true
-            styled(.Middle(normalImage: normalImage))
+            styled(.MiddleNormal(normalImage: normalImage))
         case .LargeHighlighted(let normalImage, let highlightedImage):
             xx_imageBorderWidth = 1
             xx_isTextDown = true
@@ -65,7 +65,7 @@ public extension XXTintColorButton {
             xx_imageBorderWidth = 1
             xx_isTextDown = true
             styled(.MiddleMark(normalImage: normalImage, highlightedImage: highlightedImage))
-        case .LargeColored(let normalImage):
+        case .LargeColoredNormal(let normalImage):
             xx_isTextDown = true
             setImage(normalImage, forState: .Normal)
         case .TextLight:

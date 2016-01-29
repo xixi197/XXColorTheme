@@ -50,8 +50,8 @@ class ViewController: UIViewController {
 //        borderRowLabel.xx_colorStyle = .Light
 //        textRowLabel.xx_colorStyle = .Light
 
-        defaultButton.styled(.Middle(normalImage: UIImage(named: "download")!))
-        lightButton.styled(.Light(normalImage: UIImage(named: "download")!))
+//        defaultButton.styled(.Middle(normalImage: UIImage(named: "download")!))
+//        lightButton.styled(.Light(normalImage: UIImage(named: "download")!))
         tintButton.styled(.MiddleMark(normalImage: UIImage(named: "like")!, highlightedImage: UIImage(named: "liked")!))
 
         defaultSelectedButton.styled(.MiddleHighlighted(normalImage: UIImage(named: "download")!, highlightedImage: UIImage(named: "downloaded")!))
