@@ -39,7 +39,7 @@ public extension UIView {
             xx_backgroundColorStyle = .Clear
 
         case .NavigationMaskBack:
-            xx_backgroundColorStyle = .Light4
+            xx_backgroundColorStyle = .Dark4
         case .NavigationSep:
             xx_backgroundColorStyle = .Light5
 
