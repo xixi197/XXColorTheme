@@ -1,5 +1,5 @@
 //
-//  XXTintColorButton.swift
+//  TCButton.swift
 //  XXColorTheme
 //
 //  Created by xixi197 on 16/1/20.
@@ -8,7 +8,8 @@
 
 import UIKit
 
-@IBDesignable public class XXTintColorButton: UIButton {
+//TCButton
+@IBDesignable public class TCButton: UIButton {
 
     // tintColor ColorTheme
     private var _normalTintColor: UIColor?

@@ -1,5 +1,5 @@
 //
-//  XXRoundCornerButton.swift
+//  RCButton.swift
 //  XXColorTheme
 //
 //  Created by xixi197 on 16/1/22.
@@ -8,7 +8,8 @@
 
 import UIKit
 
-@IBDesignable public class XXRoundCornerButton: UIButton {
+//RoundCorner
+@IBDesignable public class RCButton: UIButton {
 
     // tintColor ColorTheme
     private var _normalTintColor: UIColor?

@@ -1,5 +1,5 @@
 //
-//  UIView+XXStyle.swift
+//  UILabelStyle.swift
 //  XXColorTheme
 //
 //  Created by xixi197 on 16/1/21.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-public enum XXLabelStyle {
+public enum UILabelStyle {
     case NavgationTitle
 
     case SectionTitle
@@ -32,12 +32,12 @@ public enum XXLabelStyle {
 }
 
 public extension UILabel {
-    convenience init(style: XXLabelStyle) {
+    convenience init(style: UILabelStyle) {
         self.init(frame: CGRectZero)
         styled(style)
     }
 
-    func styled(style: XXLabelStyle) {
+    func styled(style: UILabelStyle) {
         switch style {
         case .NavgationTitle:
             xx_textColorStyle = .Light

@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var changeButton: XXTintColorButton!
+    @IBOutlet weak var changeButton: TCButton!
 
     @IBOutlet weak var defaultColLabel: UILabel!
     @IBOutlet weak var lightColLabel: UILabel!
@@ -20,21 +20,21 @@ class ViewController: UIViewController {
     @IBOutlet weak var borderRowLabel: UILabel!
     @IBOutlet weak var textRowLabel: UILabel!
 
-    @IBOutlet weak var defaultButton: XXTintColorButton!
-    @IBOutlet weak var lightButton: XXTintColorButton!
-    @IBOutlet weak var tintButton: XXTintColorButton!
+    @IBOutlet weak var defaultButton: TCButton!
+    @IBOutlet weak var lightButton: TCButton!
+    @IBOutlet weak var tintButton: TCButton!
 
-    @IBOutlet weak var defaultSelectedButton: XXTintColorButton!
-//    @IBOutlet weak var lightSelectedButton: XXTintColorButton!
-//    @IBOutlet weak var tintSelectedButton: XXTintColorButton!
+    @IBOutlet weak var defaultSelectedButton: TCButton!
+//    @IBOutlet weak var lightSelectedButton: TCButton!
+//    @IBOutlet weak var tintSelectedButton: TCButton!
 
-    @IBOutlet weak var defaultBorderButton: XXTintColorButton!
-    @IBOutlet weak var lightBorderButton: XXTintColorButton!
-//    @IBOutlet weak var tintBorderButton: XXTintColorButton!
+    @IBOutlet weak var defaultBorderButton: TCButton!
+    @IBOutlet weak var lightBorderButton: TCButton!
+//    @IBOutlet weak var tintBorderButton: TCButton!
 
-    @IBOutlet weak var defaultTextButton: XXTintColorButton!
-//    @IBOutlet weak var lightTextButton: XXTintColorButton!
-    @IBOutlet weak var tintTextButton: XXTintColorButton!
+    @IBOutlet weak var defaultTextButton: TCButton!
+//    @IBOutlet weak var lightTextButton: TCButton!
+    @IBOutlet weak var tintTextButton: TCButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()

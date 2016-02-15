@@ -1,5 +1,5 @@
 //
-//  UIView+XXStyle.swift
+//  UIViewStyle.swift
 //  XXColorTheme
 //
 //  Created by xixi197 on 16/1/21.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-public enum XXViewStyle {
+public enum UIViewStyle {
     case Back
     case TintBack
     case DarkBack
@@ -22,12 +22,12 @@ public enum XXViewStyle {
 }
 
 public extension UIView {
-    convenience init(style: XXViewStyle) {
+    convenience init(style: UIViewStyle) {
         self.init(frame: CGRectZero)
         styled(style)
     }
 
-    func styled(style: XXViewStyle) {
+    func styled(style: UIViewStyle) {
         switch style {
         case .Back:
             xx_backgroundColorStyle = .Back
@@ -51,14 +51,14 @@ public extension UIView {
     }
 }
 
-public enum XXImageViewStyle {
+public enum UIImageViewStyle {
     case Light
     case Tint
     case LeftDrawer
 }
 
 public extension UIImageView {
-    func styled(style: XXImageViewStyle) {
+    func styled(style: UIImageViewStyle) {
         switch style {
         case .Light:
             xx_tintColorStyle = .Light

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,30 +17,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ozP-6I-M7J" customClass="XXTintColorButton" customModule="XXColorTheme" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ozP-6I-M7J" customClass="TCButton" customModule="XXColorTheme" customModuleProvider="target">
                                 <rect key="frame" x="18" y="30" width="54" height="34"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="change:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2t9-2P-MNF"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Laz-pU-XFJ" customClass="XXTintColorButton" customModule="XXColorTheme" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Laz-pU-XFJ" customClass="TCButton" customModule="XXColorTheme" customModuleProvider="target">
                                 <rect key="frame" x="15" y="110" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="H55-FV-XBF"/>
                                     <constraint firstAttribute="height" constant="60" id="paB-nl-4Va"/>
                                 </constraints>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zob-Do-oUo" customClass="XXTintColorButton" customModule="XXColorTheme" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zob-Do-oUo" customClass="TCButton" customModule="XXColorTheme" customModuleProvider="target">
                                 <rect key="frame" x="90" y="110" width="60" height="60"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NxM-q6-m4x" customClass="XXTintColorButton" customModule="XXColorTheme" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NxM-q6-m4x" customClass="TCButton" customModule="XXColorTheme" customModuleProvider="target">
                                 <rect key="frame" x="165" y="110" width="60" height="60"/>
                                 <connections>
                                     <action selector="selected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vh8-3I-yKv"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ct8-2C-hW1" customClass="XXTintColorButton" customModule="XXColorTheme" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ct8-2C-hW1" customClass="TCButton" customModule="XXColorTheme" customModuleProvider="target">
                                 <rect key="frame" x="15" y="180" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="lJR-Ac-cgV"/>
@@ -50,7 +50,7 @@
                                     <action selector="selected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BaR-M7-aEm"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zdh-un-8NF" customClass="XXTintColorButton" customModule="XXColorTheme" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zdh-un-8NF" customClass="TCButton" customModule="XXColorTheme" customModuleProvider="target">
                                 <rect key="frame" x="4" y="250" width="82" height="82"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="82" id="3Ch-mD-6PE"/>
@@ -64,7 +64,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="xx_isTextDown" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FFy-24-vx5" customClass="XXTintColorButton" customModule="XXColorTheme" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FFy-24-vx5" customClass="TCButton" customModule="XXColorTheme" customModuleProvider="target">
                                 <rect key="frame" x="79" y="250" width="82" height="82"/>
                                 <state key="normal" title="download"/>
                                 <userDefinedRuntimeAttributes>
@@ -74,11 +74,11 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="xx_isTextDown" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bb3-gN-tmw" customClass="XXTintColorButton" customModule="XXColorTheme" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bb3-gN-tmw" customClass="TCButton" customModule="XXColorTheme" customModuleProvider="target">
                                 <rect key="frame" x="28" y="342" width="35" height="34"/>
                                 <state key="normal" title="Text"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="li3-Ks-Aeh" customClass="XXTintColorButton" customModule="XXColorTheme" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="li3-Ks-Aeh" customClass="TCButton" customModule="XXColorTheme" customModuleProvider="target">
                                 <rect key="frame" x="178" y="342" width="35" height="34"/>
                                 <state key="normal" title="Text"/>
                             </button>

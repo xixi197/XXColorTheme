@@ -22,15 +22,16 @@
 		C487847B1C5A1D260047CA34 /* UIProgressView+XXColorStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C487847A1C5A1D260047CA34 /* UIProgressView+XXColorStyle.swift */; };
 		C487847D1C5A1D300047CA34 /* UISlider+XXColorStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C487847C1C5A1D300047CA34 /* UISlider+XXColorStyle.swift */; };
 		C487847F1C5A1D3A0047CA34 /* UIPageControl+XXColorStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C487847E1C5A1D3A0047CA34 /* UIPageControl+XXColorStyle.swift */; };
-		C48784811C5A206B0047CA34 /* XXTintColorButton+XXColorStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48784801C5A206B0047CA34 /* XXTintColorButton+XXColorStyle.swift */; };
-		C48784831C5A21620047CA34 /* XXRoundCornerButton+XXColorStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48784821C5A21620047CA34 /* XXRoundCornerButton+XXColorStyle.swift */; };
-		C487848B1C5A28310047CA34 /* UIView+XXStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48784871C5A28310047CA34 /* UIView+XXStyle.swift */; };
-		C487848C1C5A28310047CA34 /* XXRoundCornerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48784891C5A28310047CA34 /* XXRoundCornerButton.swift */; };
-		C487848D1C5A28310047CA34 /* XXTintColorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C487848A1C5A28310047CA34 /* XXTintColorButton.swift */; };
-		C487848F1C5A29960047CA34 /* UILabel+XXStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C487848E1C5A29960047CA34 /* UILabel+XXStyle.swift */; };
-		C48784911C5A29E30047CA34 /* XXTintColorButton+XXStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48784901C5A29E30047CA34 /* XXTintColorButton+XXStyle.swift */; };
+		C48784811C5A206B0047CA34 /* TCButton+XXColorStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48784801C5A206B0047CA34 /* TCButton+XXColorStyle.swift */; };
+		C48784831C5A21620047CA34 /* RCButton+XXColorStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48784821C5A21620047CA34 /* RCButton+XXColorStyle.swift */; };
+		C487848B1C5A28310047CA34 /* UIViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48784871C5A28310047CA34 /* UIViewStyle.swift */; };
+		C487848C1C5A28310047CA34 /* RCButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48784891C5A28310047CA34 /* RCButton.swift */; };
+		C487848D1C5A28310047CA34 /* TCButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C487848A1C5A28310047CA34 /* TCButton.swift */; };
+		C487848F1C5A29960047CA34 /* UILabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C487848E1C5A29960047CA34 /* UILabelStyle.swift */; };
+		C48784911C5A29E30047CA34 /* TCButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48784901C5A29E30047CA34 /* TCButtonStyle.swift */; };
 		C4BEF1531C56123000B3989C /* XXFontSizeCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BEF1521C56123000B3989C /* XXFontSizeCategory.swift */; };
 		C4BEF1551C56201D00B3989C /* UIView+XXFontSizeStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BEF1541C56201D00B3989C /* UIView+XXFontSizeStyles.swift */; };
+		C4C635791C716A4600F26482 /* RCButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C635781C716A4600F26482 /* RCButtonStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,15 +53,16 @@
 		C487847A1C5A1D260047CA34 /* UIProgressView+XXColorStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIProgressView+XXColorStyle.swift"; sourceTree = "<group>"; };
 		C487847C1C5A1D300047CA34 /* UISlider+XXColorStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISlider+XXColorStyle.swift"; sourceTree = "<group>"; };
 		C487847E1C5A1D3A0047CA34 /* UIPageControl+XXColorStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIPageControl+XXColorStyle.swift"; sourceTree = "<group>"; };
-		C48784801C5A206B0047CA34 /* XXTintColorButton+XXColorStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XXTintColorButton+XXColorStyle.swift"; sourceTree = "<group>"; };
-		C48784821C5A21620047CA34 /* XXRoundCornerButton+XXColorStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XXRoundCornerButton+XXColorStyle.swift"; sourceTree = "<group>"; };
-		C48784871C5A28310047CA34 /* UIView+XXStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+XXStyle.swift"; sourceTree = "<group>"; };
-		C48784891C5A28310047CA34 /* XXRoundCornerButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XXRoundCornerButton.swift; sourceTree = "<group>"; };
-		C487848A1C5A28310047CA34 /* XXTintColorButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XXTintColorButton.swift; sourceTree = "<group>"; };
-		C487848E1C5A29960047CA34 /* UILabel+XXStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+XXStyle.swift"; sourceTree = "<group>"; };
-		C48784901C5A29E30047CA34 /* XXTintColorButton+XXStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XXTintColorButton+XXStyle.swift"; sourceTree = "<group>"; };
+		C48784801C5A206B0047CA34 /* TCButton+XXColorStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TCButton+XXColorStyle.swift"; sourceTree = "<group>"; };
+		C48784821C5A21620047CA34 /* RCButton+XXColorStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RCButton+XXColorStyle.swift"; sourceTree = "<group>"; };
+		C48784871C5A28310047CA34 /* UIViewStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewStyle.swift; sourceTree = "<group>"; };
+		C48784891C5A28310047CA34 /* RCButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCButton.swift; sourceTree = "<group>"; };
+		C487848A1C5A28310047CA34 /* TCButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCButton.swift; sourceTree = "<group>"; };
+		C487848E1C5A29960047CA34 /* UILabelStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelStyle.swift; sourceTree = "<group>"; };
+		C48784901C5A29E30047CA34 /* TCButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCButtonStyle.swift; sourceTree = "<group>"; };
 		C4BEF1521C56123000B3989C /* XXFontSizeCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XXFontSizeCategory.swift; sourceTree = "<group>"; };
 		C4BEF1541C56201D00B3989C /* UIView+XXFontSizeStyles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+XXFontSizeStyles.swift"; sourceTree = "<group>"; };
+		C4C635781C716A4600F26482 /* RCButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCButtonStyle.swift; sourceTree = "<group>"; };
 		EFFEC2889B7E52BE5AF2564C /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -167,8 +169,8 @@
 				C487847A1C5A1D260047CA34 /* UIProgressView+XXColorStyle.swift */,
 				C487847C1C5A1D300047CA34 /* UISlider+XXColorStyle.swift */,
 				C487847E1C5A1D3A0047CA34 /* UIPageControl+XXColorStyle.swift */,
-				C48784801C5A206B0047CA34 /* XXTintColorButton+XXColorStyle.swift */,
-				C48784821C5A21620047CA34 /* XXRoundCornerButton+XXColorStyle.swift */,
+				C48784801C5A206B0047CA34 /* TCButton+XXColorStyle.swift */,
+				C48784821C5A21620047CA34 /* RCButton+XXColorStyle.swift */,
 			);
 			name = UIKit;
 			path = Classes/UIKit;
@@ -177,9 +179,10 @@
 		C48784861C5A28310047CA34 /* Style */ = {
 			isa = PBXGroup;
 			children = (
-				C48784871C5A28310047CA34 /* UIView+XXStyle.swift */,
-				C487848E1C5A29960047CA34 /* UILabel+XXStyle.swift */,
-				C48784901C5A29E30047CA34 /* XXTintColorButton+XXStyle.swift */,
+				C48784871C5A28310047CA34 /* UIViewStyle.swift */,
+				C487848E1C5A29960047CA34 /* UILabelStyle.swift */,
+				C48784901C5A29E30047CA34 /* TCButtonStyle.swift */,
+				C4C635781C716A4600F26482 /* RCButtonStyle.swift */,
 			);
 			name = Style;
 			path = Classes/Style;
@@ -188,8 +191,8 @@
 		C48784881C5A28310047CA34 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C48784891C5A28310047CA34 /* XXRoundCornerButton.swift */,
-				C487848A1C5A28310047CA34 /* XXTintColorButton.swift */,
+				C48784891C5A28310047CA34 /* RCButton.swift */,
+				C487848A1C5A28310047CA34 /* TCButton.swift */,
 			);
 			name = View;
 			path = Classes/View;
@@ -317,26 +320,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C48784811C5A206B0047CA34 /* XXTintColorButton+XXColorStyle.swift in Sources */,
+				C48784811C5A206B0047CA34 /* TCButton+XXColorStyle.swift in Sources */,
 				C46CBFCB1C50C6B500E9B575 /* UIView+XXColorStyles.swift in Sources */,
 				C487847D1C5A1D300047CA34 /* UISlider+XXColorStyle.swift in Sources */,
 				C416251B1C48CF96007C1C82 /* XXColorCategory.swift in Sources */,
-				C48784911C5A29E30047CA34 /* XXTintColorButton+XXStyle.swift in Sources */,
+				C48784911C5A29E30047CA34 /* TCButtonStyle.swift in Sources */,
 				C48784791C5A1CA40047CA34 /* UISwitch+XXColorStyle.swift in Sources */,
 				C4BEF1531C56123000B3989C /* XXFontSizeCategory.swift in Sources */,
-				C48784831C5A21620047CA34 /* XXRoundCornerButton+XXColorStyle.swift in Sources */,
+				C48784831C5A21620047CA34 /* RCButton+XXColorStyle.swift in Sources */,
 				C48784771C5A1B1A0047CA34 /* UIView+XXColorStyle.swift in Sources */,
 				C487847F1C5A1D3A0047CA34 /* UIPageControl+XXColorStyle.swift in Sources */,
-				C487848D1C5A28310047CA34 /* XXTintColorButton.swift in Sources */,
-				C487848F1C5A29960047CA34 /* UILabel+XXStyle.swift in Sources */,
+				C487848D1C5A28310047CA34 /* TCButton.swift in Sources */,
+				C487848F1C5A29960047CA34 /* UILabelStyle.swift in Sources */,
 				C48784751C59FC3F0047CA34 /* UILabel+XXColorStyle.swift in Sources */,
 				C4BEF1551C56201D00B3989C /* UIView+XXFontSizeStyles.swift in Sources */,
-				C487848C1C5A28310047CA34 /* XXRoundCornerButton.swift in Sources */,
-				C487848B1C5A28310047CA34 /* UIView+XXStyle.swift in Sources */,
+				C487848C1C5A28310047CA34 /* RCButton.swift in Sources */,
+				C487848B1C5A28310047CA34 /* UIViewStyle.swift in Sources */,
 				C46CBFD01C50D9D200E9B575 /* ImageColoredUtils.swift in Sources */,
 				C41625091C48CF27007C1C82 /* ViewController.swift in Sources */,
 				C41625071C48CF27007C1C82 /* AppDelegate.swift in Sources */,
 				C487847B1C5A1D260047CA34 /* UIProgressView+XXColorStyle.swift in Sources */,
+				C4C635791C716A4600F26482 /* RCButtonStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
