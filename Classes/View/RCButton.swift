@@ -18,7 +18,7 @@ import UIKit
     private var _borderWidth: CGFloat = 0//big1
     private var _cornerRadius: CGFloat = 0//big2
 
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         initButton()
     }

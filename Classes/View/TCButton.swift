@@ -29,7 +29,7 @@ import UIKit
     var xx_imageWidth: CGFloat = 60 // 82 * 82
     var xx_textTopMargin: CGFloat = 8
 
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         initButton()
     }
